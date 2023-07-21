@@ -1,0 +1,106 @@
+.tech-content {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.tech-content h2 {
+  font-size: 100px;
+  font-family: "Karan_Font";
+  font-weight: 100;
+  letter-spacing: 1px;
+  max-width: 100%;
+  padding-bottom: 5px;
+}
+.tech-content p {
+  font-size: 30px;
+  font-family: "Gilroy-regular";
+  color: gray;
+  padding-bottom: 50px;
+  max-width: 100%;
+}
+
+.skills .skills-content {
+  width: 22em;
+  height: 10em;
+  display: flex;
+  align-items: center;
+  max-width: 22em;
+}
+
+.skills-content .skill-text {
+  margin: auto 0;
+  font-family: "Karan_Font";
+  font-size: 15px;
+  width: 120px;
+  text-align: center;
+
+}
+
+@media screen and (max-width : 700.99px) {
+
+    .tech-content h2 {
+        font-size: 80px;
+      }
+      .tech-content p {
+        font-size: 25px;
+      }
+
+    
+}
+
+@media screen and (max-width : 600.99px) {
+
+    .tech-content h2 {
+        font-size: 70px;
+      }
+      .tech-content p {
+        font-size: 22px;
+      }
+
+    
+}
+
+@media screen and (max-width : 530.99px) {
+
+    .tech-content h2 {
+        font-size: 60px;
+      }
+      .tech-content p {
+        font-size: 20px;
+      }
+
+    
+}
+
+@media screen and (max-width : 430.99px) {
+
+    .tech-content h2 {
+        font-size: 50px;
+      }
+      .tech-content p {
+        font-size: 18px;
+      }
+
+    
+}
+
+@media screen and (max-width : 330.99px) {
+
+    .tech-content h2 {
+        font-size: 45px;
+      }
+      .tech-content p {
+        font-size: 16px;
+      }
+
+      BallCanvas{
+        width: 200px;
+      }
+
+    
+}

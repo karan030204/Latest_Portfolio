@@ -1,0 +1,1436 @@
+.contact-wrapper {
+  width: 100%;
+  height: auto;
+  background-color: #ece7e1;
+  position: relative;
+}
+
+.contact-wrapper .container {
+  max-width: 1200px;
+  padding-left: 0;
+  padding-right: 0;
+  padding: 50px 0px;
+  color: #1a1818;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container .contact-bg-text {
+  position: absolute;
+  top: 0px;
+  left: 9200px;
+  font-size: 100px;
+  color: rgba(0, 0, 0, 0.1);
+  font-family: "Karan_Font";
+  letter-spacing: 1px;
+}
+
+.container .contact-bg-text2 {
+  position: absolute;
+
+  top: 245px;
+  right: 9100px;
+  font-size: 100px;
+  color: rgba(0, 0, 0, 0.1);
+  font-family: "Karan_Font";
+  letter-spacing: 1px;
+}
+
+.container .contact-bg-text3 {
+  position: absolute;
+  bottom: 200px;
+  left: 9200px;
+  font-size: 100px;
+  color: rgba(0, 0, 0, 0.1);
+  font-family: "Karan_Font";
+  letter-spacing: 1px;
+}
+
+.contact-content {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  max-width: 94%;
+  gap: 20px;
+}
+
+.contact-content .contact-title {
+  font-size: 200px;
+  font-family: "Karan_Font";
+  min-width: 100%;
+}
+
+.contact-content .contact-subtitle {
+  color: #1a1818;
+  font-family: "Karan_Font";
+  font-size: 50px;
+  text-transform: none;
+  min-width: 475px;
+  width: 475px;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+}
+
+.contact-content .contact-desc {
+  min-width: 400px;
+  width: 400px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
+.contact-content .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.contact-content .buttons button {
+  cursor: pointer;
+  border: 1px solid #1a1818;
+  outline: none;
+  background-color: transparent;
+  padding: 30px 65px;
+  min-width: 400px;
+  border-radius: 40px;
+  font-family: "Montserrat";
+  font-weight: 400px;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.contact-content .buttons button:hover {
+  background-color: #1a1818;
+  color: #ece7e1;
+}
+
+.contact-content .contact-social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  padding-top: 50px;
+}
+
+.contact-social-media .contact-instagram,
+.contact-linkedin,
+.contact-twitter,
+.contact-github {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 35px;
+}
+
+.contact-social-media span {
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.popup-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #1a1818;
+  transition: all 1s ease-in-out;
+  animation-name: width;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 99999;
+}
+
+.contact-wrapper .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+.popup-form.closing {
+  animation-name: closeWidth;
+  transition: all 3s ease-in-out;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes width {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+
+@keyframes closeWidth {
+  0% {
+    width: 45%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.popup-form.open .close-icon {
+  width: fit-content;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  margin: 25px;
+  color: #1a1818;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 99999;
+}
+
+.close-icon .icon {
+  background-color: #ece7e1;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  font-family: "Gilroy-semibold";
+  /* margin: auto; */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10px 25px; */
+}
+
+.IntroPage {
+  /* width: 50%; */
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0px;
+  align-items: flex-start;
+  padding-bottom: 60px;
+}
+
+.emoji {
+  font-size: 40px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.emoji .high-five {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 30px 30px;
+}
+
+.IntroPage {
+  padding-left: 45px;
+  max-width: 100%;
+}
+
+.IntroPage .greetings {
+  font-size: 45px;
+  font-family: "Gilroy-semibold";
+  font-weight: 400;
+  padding-top: 30px;
+  color: #ece7e1;
+}
+
+.IntroPage .welcome-msg {
+  font-size: 30px;
+  font-weight: 200;
+  min-width: 450px;
+  /* width: 500px; */
+  font-family: "Gilroy-medium";
+  color: gray;
+  padding-top: 10px;
+}
+
+.IntroPage .Letsgo {
+  font-size: 35px;
+  padding-top: 20px;
+  font-family: "Gilroy-medium";
+  font-weight: 400;
+  color: gray;
+}
+
+.name-details {
+  position: relative;
+  width: fit-content;
+  /* height: fit-content; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* padding-top: 40px; */
+  padding-left: 45px;
+}
+
+.name-details .name {
+  position: relative;
+  padding-bottom: 70px;
+  min-width: 500px;
+  max-width: 100%;
+}
+
+.name span {
+  font-size: 50px;
+  font-family: "Gilroy-semibold";
+  font-weight: 600;
+  color: #ece7e1;
+}
+.name-details .input-field{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-details .input-field input {
+  position: relative;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid #ece7e1;
+  min-width: 400px;
+  color: #ece7e1;
+  font-family: "Gilroy-light";
+  font-size: 20px;
+  width: 400px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-details .input-field input::before {
+  content: ">";
+  position: absolute;
+  /* top: 0; */
+  /* left: 0; */
+  color: #ece7e1;
+  /* width: auto; */
+  font-size: 30px;
+  font-weight: 100;
+  /* min-width: 100px; */
+  /* max-width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondPage {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 40px;
+  padding-bottom: 70px;
+}
+
+.secondPage .title {
+  width: 500px;
+  min-width: 500px;
+  position: relative;
+  font-family: "Gilroy-semibold";
+  font-weight: 400;
+  color: #ece7e1;
+  padding-bottom: 30px;
+  font-size: 50px;
+}
+
+.secondPage .buttons {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  min-width: 400px;
+}
+
+.secondPage .buttons button {
+  text-align: center;
+  outline: none;
+  background: transparent;
+  font-family: "Gilroy-regular";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ece7e1;
+  border: 1px solid #ece7e1;
+  border-radius: 30px;
+  padding: 25px 20px;
+  /* width: 300px; */
+  cursor: pointer;
+}
+
+.secondPage .buttons button:hover {
+  color: #1a1818;
+  background-color: #ece7e1;
+}
+
+.thirdPage {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 40px;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+
+.thirdPage .get_in_touch {
+  min-width: 400px;
+  width: 500px;
+  color: #ece7e1;
+  font-family: "Gilroy-semibold";
+  font-weight: 400;
+  font-size: 50px;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.thirdPage .get_in_touch_input input {
+  outline: none;
+  border: none;
+  min-width: 400px;
+  width: 400px;
+  border-bottom: 1px solid #ece7e1;
+  background-color: transparent;
+  color: #ece7e1;
+  font-family: "Gilroy-regular";
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.fourthPage {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 40px;
+  padding-bottom: 70px;
+}
+
+.fourthPage .anything_else {
+  position: relative;
+  min-width: 500px;
+  width: 500px;
+  font-size: 50px;
+  color: #ece7e1;
+  font-family: "Gilroy-semibold";
+  padding-bottom: 20px;
+}
+
+.fourthPage textarea {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border: 1px solid #ece7e1;
+  min-width: 450px;
+  border-radius: 30px;
+  padding: 20px;
+  font-family: "Gilroy-regular";
+  font-size: 20px;
+  color: #ece7e1;
+}
+
+.next-button {
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+}
+
+.next-button button,
+.prev-button button {
+  outline: none;
+  border: 1px solid #ece7e1;
+  background-color: transparent;
+  font-family: "Gilroy-regular";
+  text-transform: uppercase;
+  font-size: 20px;
+  min-width: 100px;
+  padding: 20px 40px;
+  border-radius: 30px;
+  color: #ece7e1;
+  cursor: pointer;
+}
+
+.next-button button:hover,
+.prev-button button:hover {
+  color: #1a1818;
+  background-color: #ece7e1;
+}
+
+.prev-button {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+}
+
+.container {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  align-items: center;
+  width: 400px;
+  top: 0;
+  padding: 50px;
+  position: absolute;
+}
+
+.progressbar {
+  display: flex;
+  position: absolute;
+  gap: 20px;
+}
+
+.progressbar::before {
+  content: "";
+  position: absolute;
+  background-color: gray;
+  top: 50%;
+  left: 0;
+  height: 2px;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  width: 100%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.progress {
+  position: absolute;
+  background-color: #ece7e1;
+  top: 50%;
+  left: 0;
+  height: 2px;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  width: 50%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.circle {
+  background-color: #1a1818;
+  color: #4e4d4b;
+  font-family: "Gilroy-semibold";
+  font-size: 20px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border:  3px solid gray; */
+  transition: 0.4s ease;
+}
+
+.circle.active {
+  color: #ece7e1;
+  border-color: #ece7e1;
+}
+
+.new-progress::before {
+  /* content: "";
+    position: absolute;
+    top: 0;
+    width: 99.35%;
+    left: 0; */
+  /* border-radius: 3px; */
+  /* border: 3px solid gray;  */
+}
+
+.new-progress-bar {
+  position: absolute;
+  top: 0;
+  width: 99.3%;
+  left: 0;
+  border-radius: 3px;
+  border: 3px solid #ece7e1;
+  transition: 0.4s ease;
+}
+
+@media screen and (max-width: 1199.99px) {
+  @keyframes width {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 50%;
+    }
+  }
+
+  .IntroPage {
+    margin: 0 auto;
+    padding-left: 26px;
+  }
+  .IntroPage .greetings {
+    font-size: 40px;
+  }
+  .IntroPage .welcome-msg {
+    min-width: inherit;
+    font-size: 27px;
+    padding-right: 20px;
+    letter-spacing: 1px;
+  }
+
+  .secondPage .title{
+    min-width: inherit;
+    max-width: 100%;
+    padding-right: 30px;
+  }
+
+  .secondPage .title{
+    font-size: 45px;
+  }
+  .secondPage .buttons{
+    gap: 16px;
+    min-width: inherit;
+  }
+
+  .secondPage .buttons button{
+    font-size: 12px;
+    min-width: 400px;
+  }
+
+  .secondPage .buttons button{
+    position: relative;
+  }
+  .contact-content .contact-subtitle{
+    min-width: inherit;
+  }
+
+  .contact-content .contact-desc{
+    min-width: inherit;
+  }
+
+  .IntroPage .Letsgo {
+    font-size: 30px;
+  }
+
+  .name-details .name{
+    min-width: inherit;
+    max-width: 100%;
+    
+  }
+  .name-details{
+    padding-right: 20px;
+  }
+  .name-details .input-field input{
+    min-width: inherit;
+  }
+  .name-details .input-field::before{
+    max-width: 100%;
+    min-width: inherit;
+
+  }
+
+  .thirdPage .get_in_touch{
+    font-size: 40px;
+    min-width: inherit;
+    width: 400px;
+  }
+  .thirdPage .get_in_touch_input input{
+    min-width: inherit;
+  }
+  .fourthPage .anything_else{
+    font-size: 40px;
+    width: 400px;
+    min-width: inherit;
+  }
+  .fourthPage textarea{
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 1000.99px) {
+  .emoji .high-five {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+  .contact-content .buttons button {
+    min-width: inherit;
+  }
+
+  .next-button button,
+  .prev-button button {
+    min-width: inherit;
+    font-size: 15px;
+  }
+  .name span{
+    font-size: 45px;
+  }
+
+  .name-details .input-field::before{
+    min-width: inherit;
+  }
+  .name-details .input-field input{
+    width: 300px;
+    position: relative;
+  }
+  
+  .secondPage .title{
+    font-size: 40px;
+    width: 400px;
+  }
+  .secondPage .buttons button{
+    font-size: 10px;
+    min-width: 300px;
+  }
+  .thirdPage .get_in_touch{
+    font-size: 35px;
+    min-width: inherit;
+    width: 350px;
+  }
+  .thirdPage .get_in_touch_input input{
+    min-width: 300px;
+    width: 300px;
+  }
+  .fourthPage{
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 850.98px) {
+  .contact-content .contact-title{
+    font-size: 180px;
+  }
+
+  .contact-content .contact-subtitle{
+    font-size: 45px;
+    min-width: inherit;
+  }
+
+  .contact-content .contact-desc{
+    font-size: 18px;
+    min-width: inherit;
+  }
+  .emoji .high-five {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  .IntroPage .greetings {
+    font-size: 35px;
+  }
+  .IntroPage .welcome-msg {
+    font-size: 25px;
+  }
+
+  .IntroPage .Letsgo {
+    font-size: 25px;
+  }
+  .next-button button,
+  .prev-button button {
+    min-width: inherit;
+    font-size: 13px;
+  }
+  .contact-social-media span{
+    font-size: 13px;
+  }
+  .next-button
+{
+  right: 35px;
+  bottom: 35px;
+}
+.prev-button{
+  left: 35px;
+  bottom: 35px;
+}
+  .contact-social-media .contact-instagram, .contact-linkedin, .contact-twitter, .contact-github{
+    font-size: 30px;
+  }
+ 
+  .name span{
+    font-size: 36px;
+  }
+  .name-details .input-field input{
+    width: 250px;
+    position: relative;
+  }
+  .secondPage .title{
+    font-size: 35px;
+    width: 300px;
+    max-width: 100%;
+  }
+  .secondPage .buttons button{
+    font-size: 9px;
+    min-width: 270px;
+  }
+  .thirdPage .get_in_touch{
+    font-size: 32px;
+    min-width: inherit;
+    width: 300px;
+  }
+  .thirdPage .get_in_touch_input input{
+    min-width: 300px;
+    width: 200px;
+  }
+  .fourthPage .anything_else{
+    font-size: 35px;
+    width: 300px;
+    min-width: inherit;
+  }
+  .fourthPage textarea{
+    min-width: 200px;
+    font-size: 14px;
+
+  }
+}
+
+@media screen and (max-width: 720.98px) {
+  .contact-content .contact-title{
+    font-size: 150px;
+  }
+
+  .contact-content .contact-subtitle{
+    font-size: 40px;
+    min-width: inherit;
+  }
+
+  .contact-content .contact-desc{
+    font-size: 16px;
+    min-width: inherit;
+  }
+  .emoji .high-five {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+  .IntroPage .greetings {
+    font-size: 30px;
+  }
+  .IntroPage .welcome-msg {
+    font-size: 20px;
+  }
+
+  .IntroPage .Letsgo {
+    font-size: 20px;
+  }
+  .next-button button,
+  .prev-button button {
+    min-width: inherit;
+    font-size: 10px;
+  }
+  .contact-social-media span{
+    font-size: 10px;
+  }
+  .contact-content .buttons button{
+    font-size: 16px;
+    padding: 28px 54px;
+
+  }
+  .contact-content .contact-social-media{
+    gap: 40px;
+  }
+  .contact-social-media .contact-instagram, .contact-linkedin, .contact-twitter, .contact-github{
+    font-size: 25px;
+  }
+  .name-details .name{
+    padding-bottom: 50px;
+  }
+  .name-details .input-field input{
+    font-size: 18px;
+  }
+  .name span{
+    font-size: 30px;
+  }
+  .name-details .input-field input{
+    position: relative;
+  }
+  .secondPage .title{
+    font-size: 30px;
+    width: 300px;
+    /* max-width: 100%; */
+  }
+  .secondPage .buttons button{
+    font-size: 10px;
+    min-width: 230px;
+  }
+  .thirdPage .get_in_touch{
+    font-size: 30px;
+    min-width: inherit;
+    width: 250px;
+  }
+  .thirdPage .get_in_touch_input input{
+    min-width: inherit;
+    width: 250px;
+  }
+  .fourthPage .anything_else{
+    font-size: 28px;
+
+  }
+  .fourthPage textarea{
+    width: 150px;
+    font-size: 13px;
+  }
+}
+  
+
+@media screen and (max-width: 630.98px) {
+  .contact-content .contact-title{
+    font-size: 120px;
+  }
+
+  .contact-content .contact-subtitle{
+    font-size: 35px;
+    min-width: inherit;
+  }
+
+  .contact-content .contact-desc{
+    font-size: 14px;
+    min-width: inherit;
+  }
+  .emoji .high-five {
+    width: 0.3rem;
+    height: 0.3rem;
+  }
+  .IntroPage .greetings {
+    font-size: 25px;
+  }
+  .IntroPage .welcome-msg {
+    font-size: 15px;
+  }
+
+  .IntroPage .Letsgo {
+    font-size: 15px;
+  }
+  .next-button button,
+  .prev-button button {
+    min-width: inherit;
+    font-size: 8px;
+  }
+  .contact-social-media span{
+    font-size: 8px;
+  }
+  .contact-content .buttons button{
+    font-size: 14px;
+    padding: 25px 50px;
+  }
+  .contact-content .contact-social-media{
+    gap: 60px;
+  }
+  .contact-social-media .contact-instagram, .contact-linkedin, .contact-twitter, .contact-github{
+    font-size: 20px;
+  }
+
+  .name-details .name{
+    padding-bottom: 50px;
+  }
+
+  .name span{
+    font-size: 27px;
+  }
+  
+  .name-details .input-field input{
+    font-size: 16px;
+    position: relative;
+    width: 200px;
+  }
+  .secondPage .title{
+    font-size: 25px;
+    width: 200px;
+    /* max-width: 100%; */
+  }
+  .secondPage .buttons button{
+    font-size: 8px;
+    min-width: 120px;
+    padding: 20px 10px;
+  }
+  .thirdPage{
+    padding-left: 20px;
+  }
+  .thirdPage .get_in_touch{
+    font-size: 30px;
+    min-width: inherit;
+    width: 270px;
+  }
+  .thirdPage .get_in_touch_input input{
+    min-width: 200px;
+    width: 200px;
+  }
+  .fourthPage .anything_else{
+    font-size: 28px;
+    width: 250px;
+
+  }
+  .fourthPage textarea{
+    width: 150px;
+    font-size: 13px;
+  }
+  
+}
+
+@media screen and (max-width: 550.98px) {
+  .contact-content .contact-title{
+    font-size: 100px;
+  }
+
+  .contact-content .contact-subtitle{
+    font-size: 30px;
+    min-width: inherit;
+  }
+
+  .contact-content .contact-desc{
+    font-size: 12px;
+    min-width: inherit;
+  }
+  .emoji .high-five {
+    width: 0.2rem;
+    height: 0.2rem;
+  }
+  .IntroPage .greetings {
+    font-size: 20px;
+  }
+  .IntroPage .welcome-msg {
+    font-size: 12px;
+  }
+
+  .IntroPage .Letsgo {
+    font-size: 12px;
+  }
+  .next-button button,
+  .prev-button button {
+    min-width: inherit;
+    font-size: 6px;
+  }
+  .contact-social-media span{
+    font-size: 6px;
+  }
+  .contact-content .buttons button{
+    font-size: 12px;
+    padding: 20px 40px;
+  }
+  .contact-content .contact-social-media{
+    gap: 50px;
+  }
+  .contact-social-media .contact-instagram, .contact-linkedin, .contact-twitter, .contact-github{
+    font-size: 15px;
+
+  }
+
+  .name-details .name{
+    padding-bottom: 50px;
+  }
+
+  .name span{
+    font-size: 27px;
+  }
+  
+  .name-details .input-field input{
+    font-size: 16px;
+    position: relative;
+    width: 200px;
+  }
+
+  .thirdPage .get_in_touch{
+    font-size: 25px;
+    min-width: inherit;
+    width: 250px;
+  }
+  .thirdPage .get_in_touch_input input{
+    min-width: 170px;
+    width: 170px;
+  }
+  .fourthPage .anything_else{
+    font-size: 25px;
+    width: 230px;
+
+  }
+  .fourthPage textarea{
+    width: 100px;
+    font-size: 12px;
+    padding-right:0px;
+  }
+
+
+}
+
+@media screen and (max-width:500.98px) {
+  @keyframes width {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  .emoji .high-five {
+    width: 2rem;
+    height: 2rem;
+  }
+  .IntroPage .greetings {
+    font-size: 45px;
+  }
+  .IntroPage .welcome-msg {
+    font-size: 30px;
+  }
+
+  .IntroPage .Letsgo {
+    font-size: 35px;
+  }
+  .next-button button,
+  .prev-button button {
+    /* min-width: inherit; */
+    font-size: 14px;
+  }
+  .contact-content .contact-title{
+    font-size: 120px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .contact-content .contact-subtitle{
+    max-width: 100%;
+    margin: 0 auto;
+    width: 350px;
+    font-size: 35px;
+  }
+  .contact-content .contact-desc{
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 15px;
+  }
+  .contact-content .buttons{
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 10px;
+    max-width: 100%;
+    
+  }
+
+  .message-btn, .discuss-btn{
+    max-width: 100%;
+  }
+
+  .contact-content .buttons button{
+    width: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .contact-content .contact-social-media{
+    gap: 30px;
+    max-width: 100%;
+  }
+
+  
+  .contact-social-media .contact-instagram, .contact-linkedin, .contact-twitter, .contact-github{
+    font-size: 29px;
+    max-width: 100%;
+  }
+  .name span{
+    font-size: 50px;
+
+  }
+  .name-details .input-field input{
+    font-size: 25px;
+    width: 300px;
+  }
+  .secondPage .title{
+    font-size: 40px;
+    width: 382px;
+  }
+  .secondPage .buttons button{
+    font-size: 15px;
+    width: 250px;
+  }
+  .thirdPage .get_in_touch{
+    font-size: 45px;
+    min-width: inherit;
+    width: 400px;
+  }
+  .thirdPage .get_in_touch_input input{
+    min-width: 300px;
+    width: 350px;
+  }
+
+  .fourthPage .anything_else{
+    font-size: 45px;
+    width: 400px;
+  }
+
+  .fourthPage textarea{
+    width: 350px;
+    font-size: 22px;
+  }
+  
+}
+
+@media screen and (max-width:430.98px) {
+  .contact-content .contact-social-media{
+    gap: 20px;
+  }
+  .contact-social-media .contact-instagram, .contact-linkedin, .contact-twitter, .contact-github{
+    font-size: 25px;
+  }
+  .name span{
+    font-size: 40px;
+
+  }
+  .name-details .input-field input{
+    font-size: 20px;
+    width:250px;
+  }
+  .secondPage .title{
+    font-size: 35px;
+    width: 352px;
+  }
+  .secondPage .buttons button{
+    font-size: 12px;
+    width: 200px;
+  }
+  .thirdPage .get_in_touch{
+    font-size: 42px;
+    min-width: inherit;
+    width: 370px;
+  }
+  .thirdPage .get_in_touch_input input{
+    min-width: 270px;
+    width: 270px;
+  }
+
+  .fourthPage .anything_else{
+    font-size: 40px;
+    width: 330px;
+  }
+
+  .fourthPage textarea{
+    width: 320px;
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width:380.98px) {
+  .contact-content .contact-title{
+    font-size: 100px;
+  }
+  .contact-content .contact-subtitle{
+    font-size: 30px;
+  }
+  .contact-content .contact-desc{
+    font-size: 12px;
+  }
+  .contact-content .buttons button{
+    font-size:10px
+  }
+  .contact-content .contact-social-media{
+    gap: 10px;
+  }
+  .contact-social-media .contact-instagram, .contact-linkedin, .contact-twitter, .contact-github{
+    font-size: 20px;
+  }
+
+  .emoji{
+    font-size: 25px;
+  }
+  .emoji .high-five {
+    width: 1rem;
+    height: 1rem;
+  }
+  .IntroPage .greetings {
+    font-size: 40px;
+  }
+  .IntroPage .welcome-msg {
+    font-size: 25px;
+  }
+
+  .IntroPage .Letsgo {
+    font-size: 30px;
+  }
+  .next-button button,
+  .prev-button button {
+    /* min-width: inherit; */
+    font-size: 12px;
+  }
+  .name span{
+    font-size: 35px;
+
+  }
+  .name-details .input-field input{
+    font-size: 18px;
+    width:220px;
+  }
+  .secondPage{
+    padding-left: 20px;
+  }
+  .secondPage .title{
+    font-size: 35px;
+    width: 322px;
+  }
+  .secondPage .buttons button{
+    font-size: 11px;
+    width: 230px;
+  }
+  .thirdPage .get_in_touch{
+    font-size: 40px;
+    min-width: inherit;
+    width: 320px;
+  }
+  .thirdPage .get_in_touch_input input{
+    min-width: 250px;
+    width: 250px;
+  }
+  .fourthPage .anything_else{
+    font-size: 36px;
+    width: 300px;
+  }
+
+  .fourthPage textarea{
+    width: 260px;
+    font-size: 16px;
+  }
+
+}
+  
+
+  
+
+
+
+
+@media screen and (max-width:330.98px) {
+  .contact-content .contact-title{
+    font-size: 80px;
+  }
+  .contact-content .contact-subtitle{
+    font-size: 25px;
+  }
+  .contact-content .contact-desc{
+    font-size: 10px;
+  }
+  .contact-content .buttons button{
+    font-size:8px
+  }
+  .contact-content .contact-social-media{
+    gap: 8px;
+  }
+  .contact-social-media .contact-instagram, .contact-linkedin, .contact-twitter, .contact-github{
+    font-size: 20px;
+  }
+
+  .emoji{
+    font-size: 20px;
+  }
+  .emoji .high-five {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  .IntroPage .greetings {
+    font-size: 35px;
+  }
+  .IntroPage .welcome-msg {
+    font-size: 20px;
+  }
+
+  .IntroPage .Letsgo {
+    font-size: 25px;
+  }
+  .next-button button,
+  .prev-button button {
+    /* min-width: inherit; */
+    font-size: 10px;
+  }
+ 
+  .contact-social-media span{
+    display: none;
+  }
+  .contact-social-media .contact-instagram, .contact-linkedin, .contact-twitter, .contact-github{
+    font-size: 40px;
+  }
+
+  .contact-content .contact-social-media{
+    gap:30px
+  }
+  .name span{
+    font-size: 30px;
+
+  }
+  .name-details .input-field input{
+    font-size: 16px;
+    width:200px;
+  }
+  .secondPage{
+    padding-left: 18px;
+  }
+  .secondPage .title{
+    font-size: 25px;
+    width: 222px;
+  }
+  .secondPage .buttons button{
+    font-size: 10px;
+    width: 210px;
+  }
+  .thirdPage .get_in_touch{
+    font-size: 30px;
+    min-width: inherit;
+    width: 290px;
+  }
+  .thirdPage .get_in_touch_input input{
+    min-width: 200px;
+    width: 200px;
+  }
+  .fourthPage .anything_else{
+    font-size: 30px;
+    width: 250px;
+  }
+
+  .fourthPage textarea{
+    width: 200px;
+    font-size: 14px;
+  }
+}
+
+
+
+  
+
