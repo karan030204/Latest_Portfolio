@@ -11,18 +11,18 @@ const Tech = () => {
   return (
     <>
       <motion.div variants={textVariant()} className="tech-content">
-        {/* <h2>Technologies.</h2> */}
+        <h2>Technologies.</h2>
         <p>My skills</p>
       </motion.div>
 
       <div className="skills" style={{ display: "flex" }}>
-        <Marquee
+        {/* <Marquee
           autoFill={true}
           pauseOnHover={false}
           speed={50}
           gradient={true}
           gradientColor={[236, 231, 225, 1]}
-        >
+        > */}
           {" "}
           {technologies.map((technology) => (
             <div className="skills-content" key={technology.name}>
@@ -32,7 +32,7 @@ const Tech = () => {
               <BallCanvas icon={technology.icon} />
             </div>
           ))}
-        </Marquee>
+        {/* </Marquee> */}
       </div>
     </>
   );
