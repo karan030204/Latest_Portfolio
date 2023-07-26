@@ -1,52 +1,10 @@
-// import { motion } from "framer-motion";
-// import { BallCanvas } from "./canvas";
-// import { SectionWrapper } from "../hoc";
-// import { technologies } from "../constants";
-// import { styles } from "../styles";
-// import { textVariant } from "../utils/motion";
-// import Marquee from "react-fast-marquee";
-// import "../Elements/Tech.css";
-
-// const Tech = () => {
-//   return (
-//     <>
-//       <motion.div variants={textVariant()} className="tech-content">
-//         <h2>Technologies.</h2>
-//         <p>My skills</p>
-//       </motion.div>
-
-//       <div className="skills" style={{ display: "flex" }}>
-//         <Marquee
-//           autoFill={true}
-//           pauseOnHover={true}
-//           speed={10}
-//           gradient={true}
-//           gradientColor={[236, 231, 225, 1]}
-//           gradientWidth={100}
-//         >
-//           {" "}
-//           {technologies.map((technology) => (
-//             <div className="skills-content" key={technology.name}>
-//               <div className="skill-text">
-//                 <h1>{technology.name}</h1>
-//               </div>
-//               <BallCanvas icon={technology.icon} />
-//             </div>
-//           ))}
-//         </Marquee>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default SectionWrapper(Tech, "");
-
 import { motion } from "framer-motion";
+import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
-import { BallCanvas } from "./canvas";
+import Marquee from "react-fast-marquee";
 import "../Elements/Tech.css";
 
 const Tech = () => {
@@ -57,8 +15,16 @@ const Tech = () => {
         <p>My skills</p>
       </motion.div>
 
-      <div className="skills marquee-container">
-        <div className="marquee-content">
+      <div className="skills" style={{ display: "flex" }}>
+        <Marquee
+          autoFill={true}
+          pauseOnHover={true}
+          speed={10}
+          gradient={false}
+          gradientColor={[236, 231, 225, 1]}
+          gradientWidth={100}
+        >
+          {" "}
           {technologies.map((technology) => (
             <div className="skills-content" key={technology.name}>
               <div className="skill-text">
@@ -67,10 +33,11 @@ const Tech = () => {
               <BallCanvas icon={technology.icon} />
             </div>
           ))}
-        </div>
+        </Marquee>
       </div>
     </>
   );
 };
 
 export default SectionWrapper(Tech, "");
+
