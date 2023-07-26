@@ -10,15 +10,12 @@ const Resume = () => {
       <div className="resume-wrapper">
         <div className="resume-content">
         <div className="resume-title">
-          <MovingText direction="left" pixelsToMove={2}>
-          <span>Resume</span></MovingText>
+          <span>Resume</span>
         </div>
         <div className="resume-btn">
-          <MovingText direction="right" pixelsToMove={2}>
         <Mouse>
           <a href="/resume.pdf" target="_blank"><button>Download Resume</button></a>
           </Mouse>
-          </MovingText>
         </div>
         <div className="resume">
           <div className="ImgWrapper">
