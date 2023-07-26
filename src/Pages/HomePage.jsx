@@ -14,14 +14,14 @@ const HomePage = () => {
   return (
     <div>
         <Navbar1/>
-        <Hero/>
-        <About/>
-        <More_About_me/>
-        <Works/>
+        {/* <Hero/> */}
+        {/* <About/> */}
+        {/* <More_About_me/> */}
+        {/* <Works/> */}
         {/* <Tech/> */}
         {/* <Experience/> */}
-        <Contact /> 
-        {/* <Resume/> */}
+        {/* <Contact />  */}
+        <Resume/>
         {/* <Tech /> */}
         {/* <Projects/> */}
     </div>
