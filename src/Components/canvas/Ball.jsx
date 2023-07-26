@@ -42,7 +42,6 @@ const BallCanvas = ({ icon }) => {
         <OrbitControls enableZoom={false} position0={0} />
         <Ball imgUrl={icon} />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );
