@@ -10,12 +10,12 @@ const About = () => {
          
         <div className="main-about">
           <div className="left-about">
-          {/* <div className="about-bg-text">
+          <div className="about-bg-text">
             {" "}
             <MovingText pixelsToMove={2} direction="right">
               About
             </MovingText>
-          </div> */}
+          </div>
           <div className="left-content">
             <div className="ImgWrap1 hover-effect">
               
