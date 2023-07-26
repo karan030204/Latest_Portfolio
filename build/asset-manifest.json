@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ba0d18ea.css",
-    "main.js": "/static/js/main.1905d09b.js",
+    "main.css": "/static/css/main.32b1fcb0.css",
+    "main.js": "/static/js/main.265d7729.js",
     "static/media/basketball.mp4": "/static/media/basketball.bc1277f0be2ffbf374bd.mp4",
     "static/media/nyeusi.png": "/static/media/nyeusi.8172b58383c809e7eb7e.png",
     "static/media/movie-metro.png": "/static/media/movie-metro.d4c2cf0ff57c74ade54e.png",
@@ -93,11 +93,11 @@
     "static/media/Monastic.ttf": "/static/media/Monastic.5d29944b752ad82ef364.ttf",
     "static/media/github.png": "/static/media/github.ed1c06d925fff0b57e32.png",
     "index.html": "/index.html",
-    "main.ba0d18ea.css.map": "/static/css/main.ba0d18ea.css.map",
-    "main.1905d09b.js.map": "/static/js/main.1905d09b.js.map"
+    "main.32b1fcb0.css.map": "/static/css/main.32b1fcb0.css.map",
+    "main.265d7729.js.map": "/static/js/main.265d7729.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba0d18ea.css",
-    "static/js/main.1905d09b.js"
+    "static/css/main.32b1fcb0.css",
+    "static/js/main.265d7729.js"
   ]
 }

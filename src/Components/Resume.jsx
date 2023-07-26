@@ -11,7 +11,8 @@ const Resume = () => {
           <span>Resume</span>
         </div>
         <div className="resume-btn">
-          <button>Download Resume</button>
+          <a href="/resume.pdf" target="_blank"><button>Download Resume</button></a>
+          
         </div>
         <div className="resume">
           <div className="ImgWrapper">

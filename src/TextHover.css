@@ -29,7 +29,7 @@ li.item:hover .item-title::after {
   z-index: 3;
 }
 
-.item-title::after {
+/* .item-title::after {
   content: attr(data-menu-item-text);
   position: absolute;
   top: 0;
@@ -40,7 +40,7 @@ li.item:hover .item-title::after {
   color: transparent;
   opacity: 0;
   transition: opacity 0.5s ease;
-}
+} */
 
 
 

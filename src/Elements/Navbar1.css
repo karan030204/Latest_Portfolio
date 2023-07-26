@@ -92,7 +92,7 @@
   height: 3.5rem;
   overflow: hidden;
   border-radius: 5rem;
-  background-color: #ece7e1;
+  /* background-color: #ece7e1; */
   z-index: -1;
   overflow-y: auto;
   transition: 0.5s ease;
