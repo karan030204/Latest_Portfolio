@@ -31,8 +31,11 @@
   /* -webkit-text-stroke-width: 2px; */
   /* -webkit-text-stroke-color:  rgba(0,0,0,0.05); */
   font-size: 250px;
-  overflow: hidden;
+  min-width: 500px;
+  max-width: 500px;
   color: rgba(0, 0, 0, 0.05);
+  /* min-width: 100%; */
+  /* max-width: 100%; */
 }
 
 .main-about .left-content {
@@ -225,6 +228,9 @@
   .right-about {
     width: 400px;
     left: 50px;
+  }
+  .main-about .about-bg-text{
+    min-width: inherit;
   }
 
   .right-about p {
