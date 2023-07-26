@@ -16,13 +16,14 @@ const Tech = () => {
       </motion.div>
 
       <div className="skills" style={{ display: "flex" }}>
-        {/* <Marquee
+        <Marquee
           autoFill={true}
           pauseOnHover={false}
           speed={50}
           gradient={true}
           gradientColor={[236, 231, 225, 1]}
-        > */}
+          gradientWidth={100}
+        >
           {" "}
           {technologies.map((technology) => (
             <div className="skills-content" key={technology.name}>
@@ -32,7 +33,7 @@ const Tech = () => {
               <BallCanvas icon={technology.icon} />
             </div>
           ))}
-        {/* </Marquee> */}
+        </Marquee>
       </div>
     </>
   );
