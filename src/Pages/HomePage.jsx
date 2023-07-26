@@ -20,8 +20,8 @@ const HomePage = () => {
         <Works/>
         {/* <Tech/> */}
         {/* <Experience/> */}
-        {/* <Resume/> */}
-        {/* <Contact />  */}
+        <Resume/>
+        <Contact /> 
         {/* <Tech /> */}
         {/* <Projects/> */}
     </div>
