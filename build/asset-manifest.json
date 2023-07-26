@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.5d2ad785.css",
-    "main.js": "/static/js/main.ec58c502.js",
+    "main.css": "/static/css/main.9fc2995e.css",
+    "main.js": "/static/js/main.98cfe40c.js",
     "static/media/basketball.mp4": "/static/media/basketball.bc1277f0be2ffbf374bd.mp4",
     "static/media/nyeusi.png": "/static/media/nyeusi.8172b58383c809e7eb7e.png",
     "static/media/movie-metro.png": "/static/media/movie-metro.d4c2cf0ff57c74ade54e.png",
     "static/media/nairobi.png": "/static/media/nairobi.ac0394ec045edde92ab9.png",
     "static/media/komikult.png": "/static/media/komikult.6a1054420de7c5e7c602.png",
     "static/media/leaderboard.png": "/static/media/leaderboard.9826c7ca4c9f9a912e56.png",
-    "static/media/resume.png": "/static/media/resume.1d185a275ae6e6c0c651.png",
+    "static/media/resume.png": "/static/media/resume.1749686a56a038ac4447.png",
     "static/media/shaq.png": "/static/media/shaq.fede38a559c6d4f310d0.png",
     "static/media/Smokeys.png": "/static/media/Smokeys.6bc4a68bf94df3a1347d.png",
     "static/media/space-hub.png": "/static/media/space-hub.f07fdc44c81a1ff8dacf.png",
@@ -93,11 +93,11 @@
     "static/media/Monastic.ttf": "/static/media/Monastic.5d29944b752ad82ef364.ttf",
     "static/media/github.png": "/static/media/github.ed1c06d925fff0b57e32.png",
     "index.html": "/index.html",
-    "main.5d2ad785.css.map": "/static/css/main.5d2ad785.css.map",
-    "main.ec58c502.js.map": "/static/js/main.ec58c502.js.map"
+    "main.9fc2995e.css.map": "/static/css/main.9fc2995e.css.map",
+    "main.98cfe40c.js.map": "/static/js/main.98cfe40c.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d2ad785.css",
-    "static/js/main.ec58c502.js"
+    "static/css/main.9fc2995e.css",
+    "static/js/main.98cfe40c.js"
   ]
 }
