@@ -22,15 +22,15 @@ const Works = () => {
       <div className="works aos-init">
         <div className="works-content">
           <div className="works-left">
-          <motion.div
+          {/* <motion.div
       ref={ref}
       variants={fadeIn("left", "text", 1, 2)}
       initial="hidden"
       animate={inView ? "show" : "hidden"}
       className="works-left-title"
-    >
+    > */}
       Work.
-    </motion.div>
+    {/* </motion.div> */}
             <div className="works-left-description">
               <p   data-aos="fade-up"
     data-aos-offset="100"
