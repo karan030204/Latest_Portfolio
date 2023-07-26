@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2b83ffa9.css",
-    "main.js": "/static/js/main.2fdebaa9.js",
+    "main.js": "/static/js/main.d87a0d24.js",
     "static/media/basketball.mp4": "/static/media/basketball.bc1277f0be2ffbf374bd.mp4",
     "static/media/nyeusi.png": "/static/media/nyeusi.8172b58383c809e7eb7e.png",
     "static/media/movie-metro.png": "/static/media/movie-metro.d4c2cf0ff57c74ade54e.png",
@@ -94,10 +94,10 @@
     "static/media/github.png": "/static/media/github.ed1c06d925fff0b57e32.png",
     "index.html": "/index.html",
     "main.2b83ffa9.css.map": "/static/css/main.2b83ffa9.css.map",
-    "main.2fdebaa9.js.map": "/static/js/main.2fdebaa9.js.map"
+    "main.d87a0d24.js.map": "/static/js/main.d87a0d24.js.map"
   },
   "entrypoints": [
     "static/css/main.2b83ffa9.css",
-    "static/js/main.2fdebaa9.js"
+    "static/js/main.d87a0d24.js"
   ]
 }
