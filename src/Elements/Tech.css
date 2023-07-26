@@ -8,6 +8,27 @@
   margin: 0 auto;
 }
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-container {
+  overflow: hidden;
+}
+
+.marquee-content {
+
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
+}
+
+
 .tech-content h2 {
   font-size: 100px;
   font-family: "Karan_Font";
