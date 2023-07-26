@@ -17,11 +17,11 @@ const HomePage = () => {
         {/* <Hero/> */}
         <About/>
         {/* <More_About_me/> */}
-        <Works/>
+        {/* <Works/> */}
         {/* <Tech/> */}
         {/* <Experience/> */}
         {/* <Contact />  */}
-        <Resume/>
+        {/* <Resume/> */}
         {/* <Tech /> */}
         {/* <Projects/> */}
     </div>
