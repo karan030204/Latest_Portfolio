@@ -13,14 +13,14 @@ import Resume from '../Components/Resume'
 const HomePage = () => {
   return (
     <div>
-        {/* <Navbar1/> */}
+        <Navbar1/>
         {/* <Hero/> */}
-        {/* <About/> */}
-        {/* <More_About_me/> */}
+        <About/>
+        <More_About_me/>
         {/* <Works/> */}
         {/* <Tech/> */}
         {/* <Experience/> */}
-        {/* <Resume/> */}
+        <Resume/>
         <Contact /> 
         {/* <Tech /> */}
         {/* <Projects/> */}
