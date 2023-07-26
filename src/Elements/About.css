@@ -92,7 +92,6 @@
 }
 
 .right-content .about-me span {
-  left: 10px;
   top: 30px;
   position: absolute;
   font-size: 55px;
@@ -103,13 +102,11 @@
   /* font-style: ; */
 
   font-weight: 100;
-  min-width: 668px;
+  min-width: 407px;
   color: black;
   line-height: 65px;
 }
-.about-me new {
-  /* font-style: italic; */
-}
+
 
 .right-content .about-me .bg-text {
   position: absolute;
@@ -160,7 +157,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 450px;
+  min-width: 450px;
+  max-width: 450px;
   top: 190px;
   left: 90px;
 }
@@ -176,16 +174,17 @@
 
 .right-about .read-more-btn button {
   position: relative;
-  left: 80px;
-  outline: none;
-  border: none;
   background-color: transparent;
   color: black;
   text-transform: uppercase;
   font-family: "gotham-book";
   letter-spacing: 2px;
   font-size: 12px;
+  background-color: transparent;
+  border: 1px solid #1a1818;
+  border-radius: 30px;
   transition: all 0.3s ease-in-out;
+  padding:15px 20px;
 }
 
 .right-about .read-more-btn {
@@ -195,37 +194,23 @@
   transition: all 1s ease-in-out;
 }
 
-.right-about .read-more-btn::before {
-  content: "";
-  position: absolute;
-  background-color: black;
-  width: 65px;
-  height: 0.1px;
-  /* top: 0; */
-  /* top: 10px; */
-  /* top: 50%; */
-  left: 0;
-  margin-top: -0.5px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
+
+
 
 .right-about .read-more-btn button:hover {
   cursor: pointer;
-  left: 50px;
+  background-color: #1a1818;
+  color: #ece7e1;
 }
 
-.right-about .read-more-btn:hover::before {
-  width: 40px;
-}
 
-@media screen and (max-width: 1198.99px) {
+@media screen and (max-width: 1198.99px) {--
   .main-about {
     padding: 90px 0px;
   }
   .right-about {
-    width: 400px;
     left: 50px;
+    min-width: inherit;
   }
 
   .right-about p {
@@ -244,7 +229,6 @@
   }
   .right-content .about-me span {
     font-size: 50px;
-    left: 2px;
     top: 17px;
   }
   .right-about {
@@ -277,8 +261,8 @@
   }
   .right-content .about-me span {
     font-size: 45px;
-    left: -5px;
     top: 8px;
+    min-width: 342px;
   }
   .right-about {
     width: 360px;
@@ -295,7 +279,6 @@
   }
   .right-about .read-more-btn button {
     font-size: 10px;
-    left: 58px;
   }
 
   .main-about .about-bg-text {
@@ -319,11 +302,11 @@
   }
   .right-content .about-me span {
     font-size: 40px;
-    left: -13px;
     top: 8px;
+    padding-left: 20px;
   }
   .right-about {
-    width: 340px;
+    width: 280px;
     left: 50px;
   }
 
@@ -336,7 +319,8 @@
   }
   .right-about .read-more-btn button {
     font-size: 8px;
-    left: 50px;
+    padding: 14px 19px;
+
   }
 
   .main-about .about-bg-text {
@@ -346,6 +330,11 @@
   .left-content .ImgWrap1,
   .left-content .ImgWrap2 {
     width: 250px;
+
+  }
+  .left-content .ImgWrap1{
+    left: 0px;
+
   }
 
   .left-content .ImgWrap2 {
@@ -359,40 +348,10 @@
   .main-about {
     padding: 130px 0px;
   }
-  .right-content .about-me span {
-    font-size: 40px;
-    left: -80px;
-    top: 8px;
-    text-align: center;
-    min-width: 311px;
-  }
-  .right-about {
-    width: 320px;
-    left: -154px;
-    
-  }
 
-  .right-about p {
-    font-size: 11px;
-    text-align: center;
-  }
 
-  .right-about .read-more-btn::before {
-    width: 35px;
-    left: 200px;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  .right-about .read-more-btn button {
-    font-size: 7px;
-    left: 250px;
-  }
-
-  .right-about .read-more-btn:hover:before{
-    width: 20px;
-  }
-
-  .right-about .read-more-btn button:hover{
-    left: 230px;
+  .right-about .read-more-btn button{
+    padding: 10px 16px;
   }
 
 
@@ -402,17 +361,16 @@
   }
   .left-content .ImgWrap1,
   .left-content .ImgWrap2 {
-    width: 200px;
+    width: 230px;
   }
 
   .left-content .ImgWrap1{
-    left: -130px;
+    left: 0px;
 
   }
 
   .left-content .ImgWrap2 {
-    bottom: -250px;
-    right: -493px;
+  
   }
 }
 
@@ -422,42 +380,20 @@
   }
   
   .right-content .about-me span {
-    font-size: 40px;
-    left: -60px;
-    top: 8px;
-    text-align: center;
-    min-width: 311px;
+   
   }
   .right-about {
-    width: 300px;
+    width: 250px;
     /* display: flex; */
     /* justify-content: center; */
-    left: -110px;
     
   }
 
   .right-about p {
-    font-size: 10px;
-    text-align: center;
+    font-size: 8px;
+    line-height: 25px;
   }
 
-  .right-about .read-more-btn::before {
-    width: 35px;
-    left: 200px;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  .right-about .read-more-btn button {
-    font-size: 7px;
-    left: 250px;
-  }
-
-  .right-about .read-more-btn:hover:before{
-    width: 20px;
-  }
-
-  .right-about .read-more-btn button:hover{
-    left: 230px;
-  }
 
 
   .main-about .about-bg-text {
@@ -469,14 +405,10 @@
     width: 180px;
   }
 
-  .left-content .ImgWrap1{
-    left: -100px;
 
-  }
 
   .left-content .ImgWrap2 {
-    bottom: -200px;
-    right: -453px;
+
   }
 }
 
@@ -484,9 +416,15 @@
   .about-section{
     height: auto;
   }
+
+  .main-about .left-content{
+    flex-direction: column;
+  }
   .main-about {
     padding: 135px 0px;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .left-about{
@@ -508,7 +446,8 @@
     min-width: 311px;
   }
   .right-about {
-    width: auto;
+    width: 400px;
+
     padding: 20px;
     /* display: flex; */
     justify-content: center;
@@ -532,9 +471,6 @@ display: none;
     left: 0;
     /* transform: translateX((-50%)); */
 
-    border: 1px solid black;
-    padding: 25px;
-    border-radius: 40px;
     
   }
 
@@ -556,6 +492,7 @@ display: none;
     display: flex;
     padding: 20px;
     gap: 20px;
+    margin: 0 auto;
   }
   .left-content .ImgWrap1,
   .left-content .ImgWrap2 {
@@ -586,6 +523,10 @@ display: none;
   .main-about .left-content{
     flex-direction: column;
   }  
+  .right-about {
+    width: 350px;
+
+  }
   .right-about p {
     font-size: 12px;
   }
@@ -615,12 +556,16 @@ display: none;
 }
 
 
-@media screen and (max-width:340.99px) {
+@media screen and (max-width:350.99px) {
   .main-about .left-content{
     flex-direction: column;
   }  
+  .right-about {
+    width: 280px;
+
+  }
   .right-about p {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .right-content .about-me span{

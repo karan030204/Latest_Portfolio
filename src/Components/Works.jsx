@@ -22,6 +22,7 @@ const Works = () => {
       <div className="works aos-init">
         <div className="works-content">
           <div className="works-left">
+            <div className="works-left-title">Work.</div>
           {/* <motion.div
       ref={ref}
       variants={fadeIn("left", "text", 1, 2)}
