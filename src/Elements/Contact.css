@@ -293,7 +293,7 @@
   justify-content: center;
   align-items: flex-start;
   /* padding-top: 40px; */
-  padding-left: 45px;
+  padding-left: 40px;
 }
 
 .name-details .name {
@@ -659,6 +659,7 @@
     
   }
   .name-details{
+    padding-left: 30px;
     padding-right: 20px;
   }
   .name-details .input-field input{
@@ -702,6 +703,9 @@
     min-width: inherit;
     font-size: 15px;
   }
+  .name-details{
+    padding-left: 30px;
+  }
   .name span{
     font-size: 45px;
   }
@@ -744,6 +748,9 @@
   .contact-content .contact-subtitle{
     font-size: 45px;
     min-width: inherit;
+  }
+  .name-details{
+    padding-left: 25px;
   }
 
   .contact-content .contact-desc{
@@ -847,6 +854,9 @@
     font-size: 20px;
   }
 
+  .name-details{
+    padding-left: 20px;
+  }
   .IntroPage .Letsgo {
     font-size: 20px;
   }
