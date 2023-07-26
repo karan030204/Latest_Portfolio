@@ -15,7 +15,7 @@ const HomePage = () => {
     <div>
         <Navbar1/>
         {/* <Hero/> */}
-        {/* <About/> */}
+        <About/>
         {/* <More_About_me/> */}
         <Works/>
         {/* <Tech/> */}
