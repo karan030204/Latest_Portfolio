@@ -18,8 +18,8 @@ const Tech = () => {
       <div className="skills" style={{ display: "flex" }}>
         <Marquee
           autoFill={true}
-          pauseOnHover={false}
-          speed={50}
+          pauseOnHover={true}
+          speed={10}
           gradient={true}
           gradientColor={[236, 231, 225, 1]}
           gradientWidth={100}
