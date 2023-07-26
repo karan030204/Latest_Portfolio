@@ -17,10 +17,10 @@ const HomePage = () => {
         {/* <Hero/> */}
         {/* <About/> */}
         <More_About_me/>
-        <Works/>
-        <Tech/>
+        {/* <Works/> */}
+        {/* <Tech/> */}
         {/* <Experience/> */}
-        <Resume/>
+        {/* <Resume/> */}
         {/* <Contact />  */}
         {/* <Tech /> */}
         {/* <Projects/> */}
