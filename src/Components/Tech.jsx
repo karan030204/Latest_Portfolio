@@ -18,9 +18,9 @@ const Tech = () => {
       <div className="skills" style={{ display: "flex" }}>
         <Marquee
           autoFill={true}
-          pauseOnHover={true}
-          speed={10}
-          gradient={false}
+          pauseOnHover={false}
+          speed={50}
+          gradient={true}
           gradientColor={[236, 231, 225, 1]}
           gradientWidth={100}
         >
@@ -40,4 +40,3 @@ const Tech = () => {
 };
 
 export default SectionWrapper(Tech, "");
-
