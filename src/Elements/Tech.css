@@ -1,22 +1,27 @@
 @keyframes scroll {
   0% {
     transform: translateX(0);
- }
+  }
   100% {
     transform: translateX(calc(-250px * 7));
- }
+  }
 }
 .slider {
   background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   height: 100px;
   margin: auto;
   overflow: hidden;
   position: relative;
   width: 960px;
 }
-.slider::before, .slider::after {
-  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   content: "";
   height: 100px;
   position: absolute;
@@ -68,40 +73,40 @@
   max-width: 100%;
 }
 
-.skills{
+.skills {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 10px;
 }
 
-.skills1{
+.skills1 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   min-width: 1410px;
   max-width: 1410px;
-
 }
-.skills2{
+.skills2 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
 }
 
-
-
 .skills .skills-content {
-  width: 22em;
+  width: 19.5em;
   height: 10em;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 22em;
+  max-width: 19.5em;
   flex-wrap: wrap;
+}
+.sm\:px-16 {
+  padding-left: 1.5rem;
 }
 
 .skills-content .skill-text {
@@ -110,78 +115,59 @@
   font-size: 15px;
   width: 120px;
   text-align: center;
-
 }
 
-@media screen and (max-width:1399.99px) {
-
-  .skills1{
+@media screen and (max-width: 1399.99px) {
+  .skills1 {
     min-width: inherit;
   }
-  
 }
 
-
-@media screen and (max-width : 700.99px) {
-
-    .tech-content h2 {
-        font-size: 80px;
-      }
-      .tech-content p {
-        font-size: 25px;
-      }
-
-    
+@media screen and (max-width: 700.99px) {
+  .tech-content h2 {
+    font-size: 80px;
+  }
+  .tech-content p {
+    font-size: 25px;
+  }
 }
 
-@media screen and (max-width : 600.99px) {
-
-    .tech-content h2 {
-        font-size: 70px;
-      }
-      .tech-content p {
-        font-size: 22px;
-      }
-
-    
+@media screen and (max-width: 600.99px) {
+  .tech-content h2 {
+    font-size: 70px;
+  }
+  .tech-content p {
+    font-size: 22px;
+  }
 }
 
-@media screen and (max-width : 530.99px) {
-
-    .tech-content h2 {
-        font-size: 60px;
-      }
-      .tech-content p {
-        font-size: 20px;
-      }
-
-    
+@media screen and (max-width: 530.99px) {
+  .tech-content h2 {
+    font-size: 60px;
+  }
+  .tech-content p {
+    font-size: 20px;
+  }
 }
 
-@media screen and (max-width : 430.99px) {
-
-    .tech-content h2 {
-        font-size: 50px;
-      }
-      .tech-content p {
-        font-size: 18px;
-      }
-
-    
+@media screen and (max-width: 430.99px) {
+  .tech-content h2 {
+    font-size: 50px;
+  }
+  .tech-content p {
+    font-size: 18px;
+  }
 }
 
-@media screen and (max-width : 330.99px) {
+@media screen and (max-width: 330.99px) {
+  .tech-content h2 {
+    font-size: 45px;
+  }
+  .tech-content p {
+    font-size: 16px;
+  }
 
-    .tech-content h2 {
-        font-size: 45px;
-      }
-      .tech-content p {
-        font-size: 16px;
-      }
-
-      BallCanvas{
-        width: 200px;
-      }
-
-    
+  BallCanvas {
+    width: 200px;
+  }
 }
