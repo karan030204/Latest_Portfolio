@@ -15,17 +15,18 @@ const Tech = () => {
         <p>My skills</p>
       </motion.div>
 
-      <div className="skills" style={{ display: "flex" }}>
-        <Marquee
+      <div className="skills" >
+        {/* <Marquee
           autoFill={true}
           pauseOnHover={false}
           speed={50}
           gradient={true}
           gradientColor={[236, 231, 225, 1]}
           gradientWidth={100}
-        >
+        > */}
           {" "}
-          {technologies.map((technology) => (
+          <div className="skills1">
+          {technologies.slice(0,4).map((technology) => (
             <div className="skills-content" key={technology.name}>
               <div className="skill-text">
                 <h1>{technology.name}</h1>
@@ -33,7 +34,18 @@ const Tech = () => {
               <BallCanvas icon={technology.icon} />
             </div>
           ))}
-        </Marquee>
+          </div>
+          <div className="skills2">
+          {technologies.slice(4,9).map((technology) => (
+            <div className="skills-content" key={technology.name}>
+              <div className="skill-text">
+                <h1>{technology.name}</h1>
+              </div>
+              <BallCanvas icon={technology.icon} />
+            </div>
+          ))}
+          </div>
+        {/* </Marquee> */}
       </div>
     </>
   );

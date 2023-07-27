@@ -29,7 +29,6 @@ import {
   microverse,
 } from '../assets';
 
-import img from '../images/resume.png'
 
 // export const navLinks = [
 //   {
@@ -68,7 +67,7 @@ const services = [
 const technologies = [
   {
     name: 'HTML 5',
-    icon: img,
+    icon: html,
   },
   {
     name: 'CSS 3',
@@ -97,11 +96,8 @@ const technologies = [
     name: 'git',
     icon: git,
   },
-  {
-    name: 'figma',
-    icon: figma,
-  },
-  
+
+
 
    
 
