@@ -382,7 +382,7 @@
   min-width: 400px;
 }
 
-.secondPage .buttons button {
+.secondPage .buttons .web_design, .secondPage .buttons .web_design_develop {
   text-align: center;
   outline: none;
   background: transparent;
@@ -395,6 +395,11 @@
   padding: 25px 20px;
   /* width: 300px; */
   cursor: pointer;
+}
+
+.secondPage .buttons .web_design.active,.secondPage .buttons .web_design_develop.active{
+  background-color: #ece7e1;
+  color: #1a1818;
 }
 
 .secondPage .buttons button:hover {

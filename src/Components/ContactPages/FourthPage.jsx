@@ -1,6 +1,14 @@
 import React from "react";
 
-const FourthPage = () => {
+const FourthPage = ({myData, setMyData}) => {
+
+  const handleContentChange = (e) => {
+    const ContentData = {...myData} 
+    ContentData[e.target.id] = e.target.value;
+    setMyData(ContentData);
+  }
+
+
   return (
     <>
       <div className="fourthPage">
@@ -10,7 +18,7 @@ const FourthPage = () => {
           </span>
         </div>  
         <div className="textarea">
-          <textarea name="" id="" cols="22" rows="5" placeholder="More details about your Project"></textarea>
+          <textarea name="" id="Content" cols="22" rows="5" onChange={handleContentChange} placeholder="More details about your Project"></textarea>
         </div>
       </div>
     </>

@@ -1,6 +1,14 @@
 import React from "react";
 
-const ThirdPage = () => {
+const ThirdPage = ({myData, setMyData}) => {
+
+  const handleChange = (e) => {
+      const newData = {...myData}
+      newData[e.target.id] = e.target.value;
+      setMyData(newData);
+
+  }
+
   return (
     <>
       <div className="thirdPage">
@@ -10,7 +18,8 @@ const ThirdPage = () => {
           </span>
         </div>
         <div className="get_in_touch_input">
-          <input type="text" placeholder="Your Email" required/>
+          <input type="text" placeholder="Your Email"  id="Email" onChange={handleChange} required/>
+          <input type="hidden" placeholder="Your Email"  id="_Email" onChange={handleChange} required/>
         </div>
       </div>
     </>

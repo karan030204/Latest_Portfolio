@@ -61,7 +61,7 @@ const Navbar1 = () => {
                       </NavLink>
                     </Mouse>
                     <Mouse>
-                      <NavLink to="/skills" end className="menu-title">
+                      <NavLink to="/resume" end className="menu-title">
                         <number>03</number>
                         Resume
                       </NavLink>

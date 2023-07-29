@@ -11,8 +11,20 @@ import SecondPage from "./ContactPages/SecondPage";
 import ThirdPage from "./ContactPages/ThirdPage";
 import FourthPage from "./ContactPages/FourthPage";
 import Circle from "./Circle";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+  const [isDataFilled, setIsDataFilled] = useState(false);
+
+  const [myData, setMyData] = useState({
+    Name:"",
+    Topic:"",
+    Email:"",
+    _Email:"",
+    Content:"",
+  })
+
   const [circle] = useState(4);
   const arr = [];
 
@@ -49,6 +61,10 @@ const Contact = () => {
 
   const handleNextPage = () => {
     if (page === 4) {
+      emailjs.send("service_email","service_template",myData,"Gqo5InPEtHWRjexmI")
+      .then(result=>{
+        console.log(result.text);
+      })
     } else {
       if (page >= 1) {
         if (active >= circle) {
@@ -77,7 +93,8 @@ const Contact = () => {
 
   useEffect(() => {
     setWidth((99.35 / (circle - 1)) * active);
-  }, [circle, active]);
+    console.log(myData);
+  }, [circle, active,myData]);
 
   return (
     <>
@@ -170,13 +187,13 @@ const Contact = () => {
             {(() => {
               switch (page) {
                 case 1:
-                  return <FirstPage />;
+                  return <FirstPage myData={myData} setMyData={setMyData} isDataFilled={isDataFilled} setIsDataFilled={setIsDataFilled}/>;
                 case 2:
-                  return <SecondPage />;
+                  return <SecondPage myData={myData} setMyData={setMyData} isDataFilled={isDataFilled} setIsDataFilled={setIsDataFilled}/>;
                 case 3:
-                  return <ThirdPage />;
+                  return <ThirdPage myData={myData} setMyData={setMyData} isDataFilled={isDataFilled} setIsDataFilled={setIsDataFilled}/>;
                 case 4:
-                  return <FourthPage />;
+                  return <FourthPage myData={myData} setMyData={setMyData} isDataFilled={isDataFilled} setIsDataFilled={setIsDataFilled}/>;
                 default:
                   return null;
               }

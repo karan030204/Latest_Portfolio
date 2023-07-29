@@ -210,8 +210,9 @@
     padding: 90px 0px;
   }
   .right-about {
-    left: 50px;
+    left: 140px;
     min-width: inherit;
+    max-width: 350px;
   }
 
   .right-about p {
@@ -235,6 +236,7 @@
   .right-about {
     width: 400px;
     left: 50px;
+    max-width: none;
   }
 
   .right-about p {
