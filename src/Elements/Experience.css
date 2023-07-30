@@ -1,6 +1,8 @@
 .exp-wrapper {
   overflow-x: hidden;
   position: relative;
+  padding: 0;
+  margin: 0;
   left: 0;
   top: 0;
   background-color: #1a1818;
