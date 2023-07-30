@@ -108,7 +108,6 @@
   line-height: 65px;
 }
 
-
 .right-content .about-me .bg-text {
   position: absolute;
   color: rgba(255, 255, 255, 0.052);
@@ -185,7 +184,7 @@
   border: 1px solid #1a1818;
   border-radius: 30px;
   transition: all 0.3s ease-in-out;
-  padding:15px 20px;
+  padding: 15px 20px;
 }
 
 .right-about .read-more-btn {
@@ -195,18 +194,14 @@
   transition: all 1s ease-in-out;
 }
 
-
-
-
 .right-about .read-more-btn button:hover {
   cursor: pointer;
   background-color: #1a1818;
   color: #ece7e1;
 }
 
-
-@media screen and (max-width: 1198.99px) {--
-  .main-about {
+@media screen and (max-width: 1198.99px) {
+  -- .main-about {
     padding: 90px 0px;
   }
   .right-about {
@@ -323,7 +318,6 @@
   .right-about .read-more-btn button {
     font-size: 8px;
     padding: 14px 19px;
-
   }
 
   .main-about .about-bg-text {
@@ -333,11 +327,9 @@
   .left-content .ImgWrap1,
   .left-content .ImgWrap2 {
     width: 250px;
-
   }
-  .left-content .ImgWrap1{
+  .left-content .ImgWrap1 {
     left: 0px;
-
   }
 
   .left-content .ImgWrap2 {
@@ -346,17 +338,14 @@
   }
 }
 
-
 @media screen and (max-width: 760.99px) {
   .main-about {
     padding: 130px 0px;
   }
 
-
-  .right-about .read-more-btn button{
+  .right-about .read-more-btn button {
     padding: 10px 16px;
   }
-
 
   .main-about .about-bg-text {
     font-size: 200px;
@@ -367,13 +356,11 @@
     width: 230px;
   }
 
-  .left-content .ImgWrap1{
+  .left-content .ImgWrap1 {
     left: 0px;
-
   }
 
   .left-content .ImgWrap2 {
-  
   }
 }
 
@@ -381,23 +368,19 @@
   .main-about {
     padding: 135px 0px;
   }
-  
+
   .right-content .about-me span {
-   
   }
   .right-about {
     width: 250px;
     /* display: flex; */
     /* justify-content: center; */
-    
   }
 
   .right-about p {
     font-size: 8px;
     line-height: 25px;
   }
-
-
 
   .main-about .about-bg-text {
     font-size: 200px;
@@ -408,19 +391,16 @@
     width: 180px;
   }
 
-
-
   .left-content .ImgWrap2 {
-
   }
 }
 
 @media screen and (max-width: 600.99px) {
-  .about-section{
+  .about-section {
     height: auto;
   }
 
-  .main-about .left-content{
+  .main-about .left-content {
     flex-direction: column;
   }
   .main-about {
@@ -430,17 +410,17 @@
     align-items: center;
   }
 
-  .left-about{
+  .left-about {
     flex-direction: column-reverse;
   }
   .about-me {
     display: flex;
     justify-content: center;
   }
-  
+
   .right-content .about-me span {
     position: relative;
-    
+
     font-size: 40px;
     left: 0;
     top: 0;
@@ -458,7 +438,6 @@
     left: 0;
     top: 0;
     max-width: fit-content;
-    
   }
 
   .right-about p {
@@ -467,25 +446,22 @@
   }
 
   .right-about .read-more-btn::before {
-display: none;
+    display: none;
   }
   .right-about .read-more-btn button {
     font-size: 12px;
     /* left: 50%; */
     left: 0;
     /* transform: translateX((-50%)); */
-
-    
   }
 
-  .right-about .read-more-btn:hover:before{
+  .right-about .read-more-btn:hover:before {
     width: 20px;
   }
 
-  .right-about .read-more-btn button:hover{
+  .right-about .read-more-btn button:hover {
     left: 0px;
   }
-
 
   .main-about .about-bg-text {
     font-size: 150px;
@@ -503,11 +479,9 @@ display: none;
     width: 420px;
   }
 
-  .left-content .ImgWrap1{
-    
+  .left-content .ImgWrap1 {
     left: 0px;
     top: 0;
-
   }
 
   .left-content .ImgWrap2 {
@@ -515,97 +489,89 @@ display: none;
     bottom: 0;
     right: 0;
   }
-  .right-about .read-more-btn button:hover{
+  .right-about .read-more-btn button:hover {
     background-color: black;
     color: white;
     left: 0;
   }
 }
 
-
-@media screen and (max-width:450.99px) {
-  .main-about .left-content{
+@media screen and (max-width: 450.99px) {
+  .main-about .left-content {
     flex-direction: column;
-  }  
+  }
   .right-about {
     width: 350px;
-
   }
   .right-about p {
     font-size: 12px;
   }
 
-  .right-content .about-me span{
+  .right-content .about-me span {
     font-size: 30px;
     line-height: 45px;
   }
 
-  .right-about .read-more-btn button{
+  .right-about .read-more-btn button {
     font-size: 8px;
     padding: 15px;
   }
-  .right-about .read-more-btn button:hover{
+  .right-about .read-more-btn button:hover {
     background-color: black;
     color: white;
     left: 0;
   }
 
-  .left-content .ImgWrap1{
+  .left-content .ImgWrap1 {
     width: 100%;
   }
 
-  .left-content .ImgWrap2{
+  .left-content .ImgWrap2 {
     width: 100%;
   }
 }
 
-
-@media screen and (max-width:350.99px) {
-  .main-about .left-content{
+@media screen and (max-width: 350.99px) {
+  .main-about .left-content {
     flex-direction: column;
-  }  
+  }
   .right-about {
     width: 280px;
-
   }
   .right-about p {
     font-size: 10px;
   }
 
-  .right-content .about-me span{
+  .right-content .about-me span {
     font-size: 30px;
     line-height: 45px;
     min-width: fit-content;
   }
 
-  .right-about .read-more-btn button{
+  .right-about .read-more-btn button {
     font-size: 10px;
     padding: 15px;
   }
 
-  .right-about .read-more-btn button:hover{
+  .right-about .read-more-btn button:hover {
     background-color: black;
     color: white;
     left: 0;
   }
 
-  .right-about .read-more-btn::before{
+  .right-about .read-more-btn::before {
     display: none;
   }
 
-  .right-about .read-more-btn:hover:before{
+  .right-about .read-more-btn:hover:before {
     left: 0;
   }
 
-
-
-  .left-content .ImgWrap1{
+  .left-content .ImgWrap1 {
     width: 100%;
   }
 
-  .left-content .ImgWrap2{
+  .left-content .ImgWrap2 {
     width: 100%;
   }
 }
-
-

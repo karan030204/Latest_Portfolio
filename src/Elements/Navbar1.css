@@ -37,11 +37,11 @@
   font-size: 40px;
   font-family: "Karan_Font";
   padding: 10px;
-  color: black;
+  color: rgb(111, 111, 111);
 }
 
 .inner-top-navbar .navbar-hamburger {
-  color: black;
+  color: rgba(111,111,111);
   position: relative;
   display: flex;
   align-items: center;
@@ -67,7 +67,7 @@
 .inner-top-navbar .navbar-hamburger::before{
   content: "Menu";
   font-size: 20px;
-  color: black;
+  color: rgba(111,111,111);
   position: absolute;
   right: 60px;
   letter-spacing: 2px;

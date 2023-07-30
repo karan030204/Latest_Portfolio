@@ -11,29 +11,29 @@ import SecondPage from "./ContactPages/SecondPage";
 import ThirdPage from "./ContactPages/ThirdPage";
 import FourthPage from "./ContactPages/FourthPage";
 import Circle from "./Circle";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
+import Thanks from "./ContactPages/Thanks";
 
 const Contact = () => {
-
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [isDataFilled, setIsDataFilled] = useState(false);
-
   const [myData, setMyData] = useState({
-    Name:"",
-    Topic:"",
-    Email:"",
-    _Email:"",
-    Content:"",
-  })
+    Name: "",
+    Topic: "",
+    Email: "",
+    _Email: "",
+    Content: "",
+  });
 
   const [circle] = useState(4);
   const arr = [];
-
   const [active, setActive] = React.useState(0);
   const [width, setWidth] = React.useState(0);
   const [page, setPage] = React.useState(0);
   const [isIntro, setIsIntro] = React.useState(false);
   const [isDiscussClicked, setIsDiscussClicked] = React.useState(false);
 
+  
   const handleDiscuss = () => {
     setIsDiscussClicked(!isDiscussClicked);
   };
@@ -57,14 +57,18 @@ const Contact = () => {
     const pageIncrement = setTimeout(() => {
       setPage(1);
     }, 5500);
-  }, []);
+  }, [isDiscussClicked]);
 
   const handleNextPage = () => {
     if (page === 4) {
-      emailjs.send("service_email","service_template",myData,"Gqo5InPEtHWRjexmI")
-      .then(result=>{
-        console.log(result.text);
-      })
+      emailjs
+        .send("service_email", "service_template", myData, "Gqo5InPEtHWRjexmI")
+        .then((result) => {
+          console.log(result.text);
+          if (result.text === "OK") {
+            setIsSubmitted(true);
+          }
+        });
     } else {
       if (page >= 1) {
         if (active >= circle) {
@@ -94,7 +98,7 @@ const Contact = () => {
   useEffect(() => {
     setWidth((99.35 / (circle - 1)) * active);
     console.log(myData);
-  }, [circle, active,myData]);
+  }, [circle, active, myData]);
 
   return (
     <>
@@ -166,16 +170,6 @@ const Contact = () => {
                 style={{ width: width + "%" }}
               ></div>
             </div>
-            {/* { page >= 1 &&
-            <div className="container1">
-              <div className="content">
-                <div className="progressbar">
-                  <div className="progress" style={{width:width+"%"}}></div>
-                  {arr}
-                </div>
-              </div>
-            </div>
-} */}
 
             <div className="close-icon">
               󠁘{" "}
@@ -183,21 +177,54 @@ const Contact = () => {
                 x
               </div>
             </div>
+
             {isIntro && <Intro />}
-            {(() => {
-              switch (page) {
-                case 1:
-                  return <FirstPage myData={myData} setMyData={setMyData} isDataFilled={isDataFilled} setIsDataFilled={setIsDataFilled}/>;
-                case 2:
-                  return <SecondPage myData={myData} setMyData={setMyData} isDataFilled={isDataFilled} setIsDataFilled={setIsDataFilled}/>;
-                case 3:
-                  return <ThirdPage myData={myData} setMyData={setMyData} isDataFilled={isDataFilled} setIsDataFilled={setIsDataFilled}/>;
-                case 4:
-                  return <FourthPage myData={myData} setMyData={setMyData} isDataFilled={isDataFilled} setIsDataFilled={setIsDataFilled}y/>;
-                default:
-                  return null;
-              }
-            })()}
+            {!isSubmitted &&
+              (() => {
+                switch (page) {
+                  case 1:
+                    return (
+                      <FirstPage
+                        myData={myData}
+                        setMyData={setMyData}
+                        isDataFilled={isDataFilled}
+                        setIsDataFilled={setIsDataFilled}
+                      />
+                    );
+                  case 2:
+                    return (
+                      <SecondPage
+                        myData={myData}
+                        setMyData={setMyData}
+                        isDataFilled={isDataFilled}
+                        setIsDataFilled={setIsDataFilled}
+                      />
+                    );
+                  case 3:
+                    return (
+                      <ThirdPage
+                        myData={myData}
+                        setMyData={setMyData}
+                        isDataFilled={isDataFilled}
+                        setIsDataFilled={setIsDataFilled}
+                      />
+                    );
+                  case 4:
+                    return (
+                      <FourthPage
+                        myData={myData}
+                        setMyData={setMyData}
+                        isDataFilled={isDataFilled}
+                        setIsDataFilled={setIsDataFilled}
+                        y
+                      />
+                    );
+                  default:
+                    return null;
+                }
+              })()}
+
+            {isSubmitted && <Thanks isSubmitted={isSubmitted} />}
 
             <div
               className="prev-button"

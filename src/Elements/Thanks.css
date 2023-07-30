@@ -1,0 +1,59 @@
+.thanks-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks-wrapper .loader{
+    width: 100px;
+}
+
+.loader img{
+    width: 100%;
+}
+
+/* Whenever you want to make the text responsive  style its parent element */
+.thanks-wrapper .thanks-msg{
+    max-width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.7vw;
+    color: #ece7e1;
+    font-family: 'Gilroy-semibold';
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+@media screen and (max-width: 1199px) {
+    .thanks-wrapper .thanks-msg{
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .thanks-wrapper .thanks-msg{
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width:690.99px){
+    .thanks-wrapper .thanks-msg{
+        font-size: 3.2vw;
+    }
+}
+
+@media screen and (max-width:500.99px){
+    .thanks-wrapper .thanks-msg{
+        font-size: 5vw;
+    }
+}
+@media screen and (max-width:350.99px){
+    .thanks-wrapper .thanks-msg{
+        font-size: 6vw;
+    }
+}
+
+
+
+    

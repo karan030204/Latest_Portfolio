@@ -94,20 +94,13 @@
 
 }
 
-.workButton:hover {
-  background-color: #ece7e1;
-  color: #1a1818;
-}
+
 
 .schoolButton {
-  background-color: #ece7e1;
-  color: #1a1818;
-}
-
-.schoolButton:hover {
   background-color: #1a1818;
   color: #ece7e1;
 }
+
 
 @media screen and (max-width:1170px) {
 .vertical-timeline-element-content .vertical-timeline-element-date{

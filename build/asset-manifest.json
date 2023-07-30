@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab89d4ad.css",
-    "main.js": "/static/js/main.3cb55488.js",
+    "main.css": "/static/css/main.60411e9c.css",
+    "main.js": "/static/js/main.d2c53a1f.js",
     "static/media/basketball.mp4": "/static/media/basketball.bc1277f0be2ffbf374bd.mp4",
     "static/media/nyeusi.png": "/static/media/nyeusi.8172b58383c809e7eb7e.png",
     "static/media/movie-metro.png": "/static/media/movie-metro.d4c2cf0ff57c74ade54e.png",
@@ -71,6 +71,7 @@
     "static/media/circularstd-medium.otf": "/static/media/circularstd-medium.9ffafeddf192e8c8a111.otf",
     "static/media/Glamor-CondensedItalic.ttf": "/static/media/Glamor-CondensedItalic.b40aa63a1bb1d456f389.ttf",
     "static/media/Beauty Heart.ttf": "/static/media/Beauty Heart.caf50c2e3c9fdc6bb7f2.ttf",
+    "static/media/thanks-loader.gif": "/static/media/thanks-loader.0356e2f81a1014643299.gif",
     "static/media/GrandSlang-Roman.ttf": "/static/media/GrandSlang-Roman.c001e5a5152fad8142a1.ttf",
     "static/media/Lovelo Line Light.otf": "/static/media/Lovelo Line Light.2399e18ea80d5ef74a49.otf",
     "static/media/Continua Online Trial Regular.ttf": "/static/media/Continua Online Trial Regular.d1a83d301521910e1e80.ttf",
@@ -95,11 +96,11 @@
     "static/media/school.svg": "/static/media/school.a41655f6d5350015803153c7410cef6a.svg",
     "static/media/work.svg": "/static/media/work.3710b62484ed638074240e99317c6c60.svg",
     "index.html": "/index.html",
-    "main.ab89d4ad.css.map": "/static/css/main.ab89d4ad.css.map",
-    "main.3cb55488.js.map": "/static/js/main.3cb55488.js.map"
+    "main.60411e9c.css.map": "/static/css/main.60411e9c.css.map",
+    "main.d2c53a1f.js.map": "/static/js/main.d2c53a1f.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab89d4ad.css",
-    "static/js/main.3cb55488.js"
+    "static/css/main.60411e9c.css",
+    "static/js/main.d2c53a1f.js"
   ]
 }
