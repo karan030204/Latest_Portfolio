@@ -19,8 +19,8 @@ const HomePage = () => {
         <More_About_me/>
         <Works/>
         <Tech/>
-        {/* <Experience/> */}
-        {/* <Resume/> */}
+        <Experience/>
+        <Resume/>
         <Contact /> 
         {/* <Tech /> */}
         {/* <Projects/> */}

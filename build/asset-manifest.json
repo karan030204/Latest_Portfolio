@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.866edabe.css",
-    "main.js": "/static/js/main.7c38098c.js",
+    "main.css": "/static/css/main.6495bd0a.css",
+    "main.js": "/static/js/main.a7aef371.js",
     "static/media/basketball.mp4": "/static/media/basketball.bc1277f0be2ffbf374bd.mp4",
     "static/media/nyeusi.png": "/static/media/nyeusi.8172b58383c809e7eb7e.png",
     "static/media/movie-metro.png": "/static/media/movie-metro.d4c2cf0ff57c74ade54e.png",
@@ -92,12 +92,14 @@
     "static/media/microverse.png": "/static/media/microverse.f6fcf00a1fea6420a517.png",
     "static/media/Monastic.ttf": "/static/media/Monastic.5d29944b752ad82ef364.ttf",
     "static/media/github.png": "/static/media/github.ed1c06d925fff0b57e32.png",
+    "static/media/school.svg": "/static/media/school.a41655f6d5350015803153c7410cef6a.svg",
+    "static/media/work.svg": "/static/media/work.3710b62484ed638074240e99317c6c60.svg",
     "index.html": "/index.html",
-    "main.866edabe.css.map": "/static/css/main.866edabe.css.map",
-    "main.7c38098c.js.map": "/static/js/main.7c38098c.js.map"
+    "main.6495bd0a.css.map": "/static/css/main.6495bd0a.css.map",
+    "main.a7aef371.js.map": "/static/js/main.a7aef371.js.map"
   },
   "entrypoints": [
-    "static/css/main.866edabe.css",
-    "static/js/main.7c38098c.js"
+    "static/css/main.6495bd0a.css",
+    "static/js/main.a7aef371.js"
   ]
 }
