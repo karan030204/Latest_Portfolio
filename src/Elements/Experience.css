@@ -9,7 +9,6 @@
 }
 
 .vertical-timeline::before {
-  top: 10px;
   background-color: #ece7e1;
 }
 

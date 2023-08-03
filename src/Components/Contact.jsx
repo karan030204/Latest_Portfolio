@@ -19,7 +19,7 @@ const Contact = () => {
   const [isDataFilled, setIsDataFilled] = useState(false);
   const [myData, setMyData] = useState({
     Name: "",
-    Topic: "",
+    Topic: "Website Design",
     Email: "",
     _Email: "",
     Content: "",
@@ -32,8 +32,8 @@ const Contact = () => {
   const [page, setPage] = React.useState(0);
   const [isIntro, setIsIntro] = React.useState(false);
   const [isDiscussClicked, setIsDiscussClicked] = React.useState(false);
+  const [isNextClicked, setIsNextClicked] = useState(false);
 
-  
   const handleDiscuss = () => {
     setIsDiscussClicked(!isDiscussClicked);
   };
@@ -45,6 +45,14 @@ const Contact = () => {
       </Circle>
     );
   }
+
+  useEffect(()=>{
+    if(page == 2){
+
+        setIsNextClicked(false); 
+    }
+  },[page])
+
 
   useEffect(() => {
     const introPage = setTimeout(() => {
@@ -60,29 +68,48 @@ const Contact = () => {
   }, [isDiscussClicked]);
 
   const handleNextPage = () => {
+    if(page == 3 || page == 1){
+      setIsNextClicked(true);
+    }
     if (page === 4) {
-      emailjs
-        .send("service_email", "service_template", myData, "Gqo5InPEtHWRjexmI")
-        .then((result) => {
-          console.log(result.text);
-          if (result.text === "OK") {
-            setIsSubmitted(true);
-          }
-        });
+      if (isDataFilled) {
+        emailjs
+          .send(
+            "service_email",
+            "service_template",
+            myData,
+            "Gqo5InPEtHWRjexmI"
+          )
+          .then((result) => {
+            console.log(result.text);
+            if (result.text === "OK") {
+              setIsSubmitted(true);
+            }
+          });
+      }
     } else {
-      if (page >= 1) {
-        if (active >= circle) {
-          setActive(active);
-        } else {
-          setActive(active + 1);
+      if (isDataFilled) {
+        if (page >= 1) {
+          if (active >= circle) {
+            setActive(active);
+          } else {
+            setActive(active + 1);
+          }
+        }
+        if (isIntro == false) {
+          
+          setPage(page + 1);
+          if (page == 2) {
+            setIsDataFilled(false);
+          }
         }
       }
-      if (isIntro == false) {
-        setPage(page + 1);
-      }
+      
     }
   };
   const handlePrevPage = () => {
+    setIsNextClicked(false);
+
     if (page === 1) {
     } else {
       if (active <= 0) {
@@ -96,8 +123,13 @@ const Contact = () => {
   };
 
   useEffect(() => {
-    setWidth((99.35 / (circle - 1)) * active);
     console.log(myData);
+    console.log(isNextClicked);
+    console.log(page);
+  }, [myData,isNextClicked]);
+
+  useEffect(() => {
+    setWidth((99.35 / (circle - 1)) * active);
   }, [circle, active, myData]);
 
   return (
@@ -189,6 +221,7 @@ const Contact = () => {
                         setMyData={setMyData}
                         isDataFilled={isDataFilled}
                         setIsDataFilled={setIsDataFilled}
+                        isNextClicked={isNextClicked}
                       />
                     );
                   case 2:
@@ -207,6 +240,8 @@ const Contact = () => {
                         setMyData={setMyData}
                         isDataFilled={isDataFilled}
                         setIsDataFilled={setIsDataFilled}
+                        isNextClicked={isNextClicked}
+
                       />
                     );
                   case 4:
@@ -216,7 +251,8 @@ const Contact = () => {
                         setMyData={setMyData}
                         isDataFilled={isDataFilled}
                         setIsDataFilled={setIsDataFilled}
-                        y
+                        isNextClicked={isNextClicked}
+                        
                       />
                     );
                   default:

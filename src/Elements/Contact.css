@@ -335,9 +335,19 @@
   justify-content: center;
 }
 
-.name-details .input-field .error{
+.name-details .input-field .error, .thirdPage .get_in_touch_input .error{
   border-bottom: 1px solid red;
 
+}
+
+.text{
+  display: none;
+}
+.error-text{
+  color: red;
+  font-family: 'Gilroy-regular';
+  font-size: 20px;
+  padding-top: 10px;
 }
 
 .name-details .input-field input::before {
@@ -433,6 +443,10 @@
   font-size: 50px;
   padding-bottom: 40px;
   letter-spacing: 1px;
+}
+
+.email-text{
+  display: none;
 }
 
 .thirdPage .get_in_touch_input input {
