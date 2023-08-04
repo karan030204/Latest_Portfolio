@@ -14,6 +14,8 @@ import Circle from "./Circle";
 import emailjs from "@emailjs/browser";
 import Thanks from "./ContactPages/Thanks";
 
+let discuss_btn_count = 0;
+
 const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isDataFilled, setIsDataFilled] = useState(false);
@@ -35,6 +37,7 @@ const Contact = () => {
   const [isNextClicked, setIsNextClicked] = useState(false);
 
   const handleDiscuss = () => {
+    discuss_btn_count++;
     setIsDiscussClicked(!isDiscussClicked);
   };
 
@@ -46,32 +49,36 @@ const Contact = () => {
     );
   }
 
-  useEffect(()=>{
-    if(page == 2){
-
-        setIsNextClicked(false); 
+  useEffect(() => {
+    if (page == 2 || page == 4) {
+      setIsNextClicked(false);
     }
-  },[page])
-
+  }, [page]);
 
   useEffect(() => {
+    if(discuss_btn_count == 1){
     const introPage = setTimeout(() => {
       setIsIntro(true);
-      const intro = setInterval(() => {
+      const intro = setTimeout(() => {
         setIsIntro(false);
-      }, 4000);
-    }, 1500);
+      }, 3900);
+    }, 1000);
+  }
 
+  if(!isIntro && discuss_btn_count == 1){
     const pageIncrement = setTimeout(() => {
       setPage(1);
-    }, 5500);
+    }, 5800);}
+
+
   }, [isDiscussClicked]);
 
   const handleNextPage = () => {
-    if(page == 3 || page == 1){
+    if (page == 3 || page == 1) {
       setIsNextClicked(true);
     }
     if (page === 4) {
+      setIsNextClicked(true)
       if (isDataFilled) {
         emailjs
           .send(
@@ -97,14 +104,12 @@ const Contact = () => {
           }
         }
         if (isIntro == false) {
-          
           setPage(page + 1);
-          if (page == 2) {
+          if (page == 2 || page == 4 || page == 3) {
             setIsDataFilled(false);
           }
         }
       }
-      
     }
   };
   const handlePrevPage = () => {
@@ -126,7 +131,7 @@ const Contact = () => {
     console.log(myData);
     console.log(isNextClicked);
     console.log(page);
-  }, [myData,isNextClicked]);
+  }, [myData, isNextClicked]);
 
   useEffect(() => {
     setWidth((99.35 / (circle - 1)) * active);
@@ -134,7 +139,7 @@ const Contact = () => {
 
   return (
     <>
-      <section className="contact-wrapper">
+      <section className="contact-wrapper" id="contact">
         {isDiscussClicked && <div className="overlay" id="overlay"></div>}
 
         <div className="container">
@@ -241,7 +246,6 @@ const Contact = () => {
                         isDataFilled={isDataFilled}
                         setIsDataFilled={setIsDataFilled}
                         isNextClicked={isNextClicked}
-
                       />
                     );
                   case 4:
@@ -252,7 +256,6 @@ const Contact = () => {
                         isDataFilled={isDataFilled}
                         setIsDataFilled={setIsDataFilled}
                         isNextClicked={isNextClicked}
-                        
                       />
                     );
                   default:
@@ -262,19 +265,23 @@ const Contact = () => {
 
             {isSubmitted && <Thanks isSubmitted={isSubmitted} />}
 
-            <div
-              className="prev-button"
-              style={{ display: page >= 2 ? "block" : "none" }}
-            >
-              <button onClick={handlePrevPage}>
-                {page == 1 ? "" : "back"}
-              </button>
-            </div>
-            <div className="next-button">
-              <button onClick={handleNextPage}>
-                {page == 4 ? "submit" : "next"}
-              </button>
-            </div>
+            {!isSubmitted && (
+              <>
+                <div
+                  className="prev-button"
+                  style={{ display: page >= 2 ? "block" : "none" }}
+                >
+                  <button onClick={handlePrevPage}>
+                    {page == 1 ? "" : "back"}
+                  </button>
+                </div>
+                <div className="next-button">
+                  <button onClick={handleNextPage}>
+                    {page == 4 ? "submit" : "next"}
+                  </button>
+                </div>
+              </>
+            )}
           </div>
         )}
       </section>

@@ -49,6 +49,9 @@ const ThirdPage = ({ myData, setMyData, isDataFilled, setIsDataFilled, isNextCli
             className={isValidEmail ? "" : "error"}
             onChange={handleChange}
             required
+            autoComplete="off"
+            value={myData.Email}
+
           />
           {isNextClicked && 
           <div className={isValidEmail ? "email-text" : "error-text"}>

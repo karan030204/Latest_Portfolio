@@ -350,6 +350,10 @@
   padding-top: 10px;
 }
 
+.content-text{
+  display: none;
+}
+
 .name-details .input-field input::before {
   content: ">";
   position: absolute;
@@ -494,6 +498,10 @@
   font-family: "Gilroy-regular";
   font-size: 20px;
   color: #ece7e1;
+}
+
+.textarea .error{
+  border: 1px solid red;
 }
 
 .next-button {

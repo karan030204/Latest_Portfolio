@@ -7,7 +7,7 @@ import MovingText from "../HorizontalScrollText";
 const Resume = () => {
   return (
     <>
-      <div className="resume-wrapper">
+      <div className="resume-wrapper" id="resume">
         <div className="resume-content">
           <div className="resume-title">
             <span>Resume</span>

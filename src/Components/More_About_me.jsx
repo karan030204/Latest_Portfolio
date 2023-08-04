@@ -9,7 +9,7 @@ import thumbnail from '../images/thumbnail.png'
 const More_About_me = () => {
   return (
     <>
-    <div className="video">
+    <div className="video" id="more-about-me">
       <div className="video-center-big-text"><span>More About me</span></div>
       <div className="video-center-small-text"><span>A video about myself</span></div>
       <div className="video-player">

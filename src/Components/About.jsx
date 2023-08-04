@@ -6,7 +6,7 @@ import Mouse from "../MouseMove";
 const About = () => {
   return (
     <>
-      <div className="about-section">
+      <div className="about-section" id="about">
          
         <div className="main-about">
           <div className="left-about">

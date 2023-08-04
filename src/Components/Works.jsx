@@ -19,7 +19,7 @@ const Works = () => {
   });
   return (
     <>
-      <div className="works aos-init">
+      <div className="works aos-init" id="work">
         <div className="works-content">
           <div className="works-left">
             <div className="works-left-title">Work.</div>

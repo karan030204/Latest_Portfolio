@@ -22,7 +22,7 @@ const Experience = () => {
 
   return (
     <>
-      <div className="exp-wrapper">
+      <div className="exp-wrapper" id="exp">
         <div className="exp-title">
         <h1 className="title">Work Experience</h1>
         </div>

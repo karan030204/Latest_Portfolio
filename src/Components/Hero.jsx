@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="hero-section">
+      <div className="hero-section" id="hero">
         <div className="hero-content">
           {/* <div className="hero-bg-content"> */}
             {/* <p className="hero-description">

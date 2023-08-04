@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from "react";
 
-
 //For allowing space in between the words just leave the space after the characters you want
 const name_regex = /^[a-zA-Z ]+$/;
 let count = 0;
+let isSet = 0;
 let hasErrors = false;
-const FirstPage = ({ myData, setMyData, isDataFilled, setIsDataFilled , isNextClicked}) => {
+const FirstPage = ({
+  myData,
+  setMyData,
+  isDataFilled,
+  setIsDataFilled,
+  isNextClicked,
+}) => {
   const nameData = { ...myData };
 
   const [isValid, setIsValid] = useState(true);
@@ -16,43 +22,42 @@ const FirstPage = ({ myData, setMyData, isDataFilled, setIsDataFilled , isNextCl
     // validate_inputs();
   };
 
-  useEffect(() => {
-    // const typed_character = (e) => {
-    //   // If you want a key that user has pressed which key then you can use e.key to display the key which is pressed
-    //   console.log(e.key);
-    //   if(!name_regex.test(e.key)){
-    //       setIsValid(false);
-    //   }else{
-    //     setIsValid(true);
-    //   }
-    // }
-    // window.addEventListener('keydown', typed_character);
-    // return () => {
-    //   window.removeEventListener('keyup', typed_character)
-    // }
-  }, []);
+  //Json.stringify is used to convert JSON object to JSON String
+  // useEffect(() => {
+  //   isSet = 1;
+  //   localStorage.setItem(`Name`, JSON.stringify(myData.Name));
+  // }, [myData]);
+
+  //JSON.parse is used to convert again the json objec we have converted to json string
+  //We want in the form of json objects only thats why we are using JSON.parse()
+
+  // useEffect(() => {
+  //   if(isSet == 1){
+  //   const Name = JSON.parse(localStorage.getItem("Name"));
+  //   setMyName(Name);
+  //   console.log(Name);
+  //   }
+  // }, []);
 
   useEffect(() => {
     validate_inputs();
-  }, [myData,isNextClicked]);
-  console.log(isNextClicked);
+  }, [myData, isNextClicked]);
 
   const validate_inputs = () => {
     if (nameData.Name.trim() === "" && count == 0) {
-      if(isNextClicked && !isDataFilled){
-        setIsValid(false)
+      if (isNextClicked && !isDataFilled) {
+        setIsValid(false);
       }
     } else {
       count = 1;
       if (name_regex.test(nameData.Name)) {
         setIsValid(true);
         hasErrors = false;
-        setIsDataFilled(true)
-        
+        setIsDataFilled(true);
       } else {
         setIsValid(false);
         hasErrors = true;
-        setIsDataFilled(false)
+        setIsDataFilled(false);
       }
     }
   };
@@ -72,15 +77,15 @@ const FirstPage = ({ myData, setMyData, isDataFilled, setIsDataFilled , isNextCl
             id="Name"
             required
             className={isValid ? "" : "error"}
+            autoComplete="off"
+            value={myData.Name}
           />
-    
-
         </div>
-        {isNextClicked && 
-          <div className={isValid? "text" : "error-text"}>
+        {isNextClicked && (
+          <div className={isValid ? "text" : "error-text"}>
             <span>Please Correct!</span>
           </div>
-}
+        )}
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1cdf7ad6.css",
-    "main.js": "/static/js/main.59e3eabe.js",
+    "main.css": "/static/css/main.5323d2d3.css",
+    "main.js": "/static/js/main.25cfa6a9.js",
     "static/media/basketball.mp4": "/static/media/basketball.bc1277f0be2ffbf374bd.mp4",
     "static/media/nyeusi.png": "/static/media/nyeusi.8172b58383c809e7eb7e.png",
     "static/media/movie-metro.png": "/static/media/movie-metro.d4c2cf0ff57c74ade54e.png",
@@ -96,11 +96,11 @@
     "static/media/school.svg": "/static/media/school.a41655f6d5350015803153c7410cef6a.svg",
     "static/media/work.svg": "/static/media/work.3710b62484ed638074240e99317c6c60.svg",
     "index.html": "/index.html",
-    "main.1cdf7ad6.css.map": "/static/css/main.1cdf7ad6.css.map",
-    "main.59e3eabe.js.map": "/static/js/main.59e3eabe.js.map"
+    "main.5323d2d3.css.map": "/static/css/main.5323d2d3.css.map",
+    "main.25cfa6a9.js.map": "/static/js/main.25cfa6a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cdf7ad6.css",
-    "static/js/main.59e3eabe.js"
+    "static/css/main.5323d2d3.css",
+    "static/js/main.25cfa6a9.js"
   ]
 }

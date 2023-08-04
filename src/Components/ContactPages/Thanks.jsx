@@ -11,7 +11,7 @@ const Thanks = ({isSubmitted}) => {
             //SetInterval function :  will call the function every time_delay seconds you have written as below 1500 it will call again and again
             const setLoader = setTimeout(() => {
                 setIsLoaderActive(false);
-            }, 1500);
+            }, 1000);
         }
 
     

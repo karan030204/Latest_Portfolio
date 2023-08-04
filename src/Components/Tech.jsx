@@ -10,7 +10,7 @@ import "../Elements/Tech.css";
 const Tech = () => {
   return (
     <>
-      <motion.div variants={textVariant()} className="tech-content">
+      <motion.div variants={textVariant()} className="tech-content" id="tech">
         <h2>Technologies.</h2>
         <p>My skills</p>
       </motion.div>
