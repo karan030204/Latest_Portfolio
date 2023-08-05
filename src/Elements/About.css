@@ -2,8 +2,9 @@
   position: relative;
   width: 100%;
   /* overflow-x: hidden; */
-  height: 110vh;
+  height: 100%;
   background-color: #1a1818;
+  padding-bottom: 200px;
 }
 
 .top-about {
