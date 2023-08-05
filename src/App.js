@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-           && <Route exact path="/" element={<HomePage />} />
+            <Route exact path="/" element={<HomePage />} />
         </Routes>
       </Router>
     </div>

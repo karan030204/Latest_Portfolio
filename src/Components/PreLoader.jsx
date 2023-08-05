@@ -2,7 +2,19 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "../Elements/PreLoader.css";
 
-let words = ["Hello", "नमस्ते","नमस्कारम्" ,"હેલો", "Bonjour","你好", "Hola","హలో", "Ciao", "Hallo","হ্যালো"];
+let words = [
+  "Hello",
+  "नमस्ते",
+  "नमस्कारम्",
+  "હેલો",
+  "Bonjour",
+  "你好",
+  "Hola",
+  "హలో",
+  "Ciao",
+  "Hallo",
+  "হ্যালো",
+];
 let count = 0;
 const PreLoader = () => {
   const [activeWord, setActiveWord] = useState("");
@@ -16,7 +28,7 @@ const PreLoader = () => {
         count = count + 1;
         console.log(count);
       }
-      if(count == words.length-1){
+      if (count == words.length - 1) {
         setIsFinished(true);
       }
     }, 380);
@@ -26,9 +38,8 @@ const PreLoader = () => {
     };
   }, []);
 
-
   useEffect(() => {
-    if(isFinished){
+    if (isFinished) {
       const loaderOff = setTimeout(() => {
         setIsActive(false);
       }, 500);
@@ -38,7 +49,7 @@ const PreLoader = () => {
   }, [isFinished]);
 
   return (
-    <div className={isActive ? "preloader":"preloader close"}>
+    <div className={isActive ? "preloader" : "preloader close"}>
       <div className="center-text">
         <span>{activeWord}</span>
       </div>
