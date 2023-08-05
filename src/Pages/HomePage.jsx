@@ -9,10 +9,12 @@ import More_About_me from '../Components/More_About_me'
 import Works from '../Components/Works'
 import Contact from '../Components/Contact'
 import Resume from '../Components/Resume'
+import PreLoader from '../Components/PreLoader'
 
 const HomePage = () => {
   return (
     <div>
+      <PreLoader/>
         <Navbar1/>
         {/* <Hero/> */}
         <About/>

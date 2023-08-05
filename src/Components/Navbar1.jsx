@@ -45,46 +45,46 @@ const Navbar1 = () => {
             </div>
           </div>
         
-            <div className={`menu ${isToggleClicked ? "show" : "close"}`}>
+            <div className={`menu ${isToggleClicked ? "show" : ""}`}>
               <div className="inner_menu">
                 <div className="left-menu">
                   <div className="left-menu-left">
                     <Mouse>
-                      <NavLink to="/" end className="menu-title">
+                      <a href="#" end className="menu-title" onClick={handleHamburger}>
                         <number>01</number> Home
-                      </NavLink>
+                      </a>
                     </Mouse>
                     <Mouse>
-                      <NavLink to="/about" end className="menu-title">
+                      <a href="#about" end className="menu-title" onClick={handleHamburger}>
                         <number>02</number>
                         About
-                      </NavLink>
+                      </a>
                     </Mouse>
                     <Mouse>
-                      <NavLink to="/resume" end className="menu-title">
+                      <a href="#resume" end className="menu-title" onClick={handleHamburger}>
                         <number>03</number>
                         Resume
-                      </NavLink>
+                      </a>
                     </Mouse>
                   </div>
                   <div className="left-menu-right">
                     <Mouse>
-                      <NavLink to="/projects" end className="menu-title">
+                      <a href="#work" end className="menu-title" onClick={handleHamburger}>
                         <number>04</number>
                         Work
-                      </NavLink>
+                      </a>
                     </Mouse>
                     <Mouse>
-                      <NavLink to="/resume" end className="menu-title">
+                      <a href="#exp" end className="menu-title" onClick={handleHamburger}>
                         <number>05</number>
-                        Tech
-                      </NavLink>
+                        Timeline
+                      </a>
                     </Mouse>
                     <Mouse>
-                      <NavLink to="/contact" end className="menu-title">
+                      <a href="#contact" end className="menu-title" onClick={handleHamburger}>
                         <number>06</number>
                         Contact
-                      </NavLink>
+                      </a>
                     </Mouse>
                   </div>
                   {/* <div className="center-big-text">MENU</div> */}
@@ -104,7 +104,12 @@ const Navbar1 = () => {
                   <div className="contact-details">
                       <div className="contact-content">
                           <span>Have an Idea ? </span>
-                          <Mouse><h1 className="contact-btn">Tell me about it!</h1></Mouse>
+                          <Mouse>
+                            <a href="#contact" style={{textDecoration:"none"}} onClick={handleHamburger}>
+
+                             <h1 className="contact-btn">Tell me about it!</h1>
+                            </a>
+                            </Mouse>
                     </div>
                   </div>
                 </div>

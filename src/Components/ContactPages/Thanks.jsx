@@ -7,7 +7,7 @@ const Thanks = ({isSubmitted}) => {
     useEffect(() => {
 
         if(isSubmitted){
-            //setTimeout : it will  run that function for only specific period of time for eg if i want to run loader for only 1500 seconds then i will use setTimeout
+            //setTimeout : It will call the function after certain amount of time which user passes in the syntax in ms
             //SetInterval function :  will call the function every time_delay seconds you have written as below 1500 it will call again and again
             const setLoader = setTimeout(() => {
                 setIsLoaderActive(false);

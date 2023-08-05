@@ -57,7 +57,9 @@ const About = () => {
               life with my expertise in web development.
             </p>
             <dir className="read-more-btn">
+              <a href="">
              <Mouse> <button>Read More</button></Mouse>
+             </a>
             </dir>
           </div>
         </div>

@@ -1,0 +1,30 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1818;
+    transition:  2s ease-in-out;
+    z-index: 999999999;
+}
+
+.preloader.close{
+    width: 100%;
+    height: 0%;
+    /* left: -25em; */
+    top: -25em;
+    background-color: #1a1818;
+    border-radius: 0em 0em 100% 100%;
+    /* overflow: hidden; */
+}
+
+.preloader .center-text span{
+    font-family: 'Karan_Font';
+    font-size: 11vw;
+    color: #ece7e1;
+
+}
