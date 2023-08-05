@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.010f4db5.css",
+    "main.css": "/static/css/main.4732ecf6.css",
     "main.js": "/static/js/main.e13cf92d.js",
     "static/media/basketball.mp4": "/static/media/basketball.bc1277f0be2ffbf374bd.mp4",
     "static/media/nyeusi.png": "/static/media/nyeusi.8172b58383c809e7eb7e.png",
@@ -96,11 +96,11 @@
     "static/media/school.svg": "/static/media/school.a41655f6d5350015803153c7410cef6a.svg",
     "static/media/work.svg": "/static/media/work.3710b62484ed638074240e99317c6c60.svg",
     "index.html": "/index.html",
-    "main.010f4db5.css.map": "/static/css/main.010f4db5.css.map",
+    "main.4732ecf6.css.map": "/static/css/main.4732ecf6.css.map",
     "main.e13cf92d.js.map": "/static/js/main.e13cf92d.js.map"
   },
   "entrypoints": [
-    "static/css/main.010f4db5.css",
+    "static/css/main.4732ecf6.css",
     "static/js/main.e13cf92d.js"
   ]
 }
