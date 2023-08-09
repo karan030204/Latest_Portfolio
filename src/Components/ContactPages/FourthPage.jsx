@@ -3,7 +3,7 @@ import { useState } from "react";
 
 
 let Content_Count = 0;
-let Content_regex = /^[a-zA-Z0-9]+$/
+let Content_regex = /^[a-zA-Z0-9,.  ]+$/
 const FourthPage = ({myData, setMyData, isNextClicked, isDataFilled, setIsDataFilled}) => {
   const [isContentValid, setIsContentValid] = useState(true);
   const [isFalse,setIsFalse] = useState(false);
