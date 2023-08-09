@@ -111,7 +111,12 @@
   .vertical-timeline-element-date {
     display: block !important;
     float: none !important;
-    margin-top: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .vertical-timeline-element-date {
+    margin-top: 0.5em;    
   }
 }
 
@@ -135,6 +140,8 @@
     /* font-size: 40px; */
     text-align: center;
   }
+
+
 }
 
 
