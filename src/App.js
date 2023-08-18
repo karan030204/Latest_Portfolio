@@ -13,9 +13,9 @@ import Contact from "./Components/Contact";
 import Works from "./Components/Works";
 import PreLoader from "./Components/PreLoader";
 import { useState,useEffect } from "react";
-import ReactGA from "react-ga"
+import ReactGA from "react-ga4"
 
-const TRACKING_ID = "UA-257585865-2"
+const TRACKING_ID = "G-8NH0LNRZMB"
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
