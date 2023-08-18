@@ -173,29 +173,39 @@ const Contact = () => {
             </div>
             <div className="buttons">
               <div className="message-btn">
-                <button>Write a Message</button>
+                <button onClick={handleDiscuss}>Write a Message</button>
               </div>
               <div className="discuss-btn">
                 <button onClick={handleDiscuss}>Discuss a Project</button>
               </div>
             </div>
             <div className="contact-social-media">
+              <a href="https://www.instagram.com/_karan324_/">
               <div className="contact-instagram">
                 <span>Instagram</span>
                 <FaInstagram />
               </div>
+              </a>
+              <a href="https://github.com/karan030204">
+                
               <div className="contact-github">
                 <span>Github</span>
                 <FaGithub />
               </div>
+              </a>
+              <a href="https://www.linkedin.com/in/karan-developer/">
               <div className="contact-linkedin">
                 <span>LinkedIn</span>
                 <FaLinkedin />
               </div>
+              </a>
+              <a href="https://twitter.com/DattaniKaran25">
               <div className="contact-twitter">
+
                 <span>Twitter</span>
                 <FaTwitter />
               </div>
+              </a>
             </div>
           </div>
         </div>

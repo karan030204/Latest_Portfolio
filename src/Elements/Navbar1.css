@@ -340,6 +340,10 @@
   gap: 20px;
   font-size: 30px;
 }
+.social-media-icons a{
+  text-decoration: none;
+  color: black;
+}
 
 .contact-details .contact-content{
   display: flex;

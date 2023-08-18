@@ -120,6 +120,10 @@
   padding-top: 50px;
 }
 
+.contact-social-media  a{
+  text-decoration: none;
+  color: black;
+}
 .contact-social-media .contact-instagram,
 .contact-linkedin,
 .contact-twitter,
@@ -131,6 +135,7 @@
   justify-content: center;
   gap: 5px;
   font-size: 35px;
+  cursor: pointer;
 }
 
 .contact-social-media span {

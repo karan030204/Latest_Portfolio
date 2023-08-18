@@ -42,7 +42,7 @@ const Experience = () => {
                 icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
                 iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
               >
-              <h3 className="vertical-timeline-element-title" style={{fontFamily:"Gilroy-semibold"}}>Creative Director</h3>
+              <h3 className="vertical-timeline-element-title" style={{fontFamily:"Gilroy-semibold"}}>{elem.title}</h3>
               <h5 className="vertical-timeline-element-subtitle" style={{fontFamily:"Gilroy-regular "}}>{elem.location}</h5>
               <p id="description">{elem.description}</p>
               {showButton && (

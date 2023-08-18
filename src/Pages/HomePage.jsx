@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import About from '../Components/About'
 import Experience from '../Components/Experience'
 import Hero from '../Components/Hero'
@@ -10,8 +10,17 @@ import Works from '../Components/Works'
 import Contact from '../Components/Contact'
 import Resume from '../Components/Resume'
 import PreLoader from '../Components/PreLoader'
+import ReactGA from "react-ga"
+
 
 const HomePage = () => {
+useEffect(() => {
+  ReactGA.pageview(window.location.pathname);
+
+ 
+}, [])
+
+
   return (
     <div>
       <PreLoader/>

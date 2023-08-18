@@ -13,6 +13,10 @@ import Contact from "./Components/Contact";
 import Works from "./Components/Works";
 import PreLoader from "./Components/PreLoader";
 import { useState,useEffect } from "react";
+import ReactGA from "react-ga"
+
+const TRACKING_ID = "UA-257585865-2"
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
 

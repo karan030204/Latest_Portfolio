@@ -1,149 +1,142 @@
-import smokeys from "./images/work_images/Smokeys.png";
+import smokeys from "./images/pizza.png";
+import Json from "./images/Json.png";
+import wallprinting from './images/wallprinting.png'
+import iryana from './images/iryana.png'
+import osproject from './images/osproject.png'
+import weather from './images/weatherapp.png'
+import todolist from './images/todolist.png'
+import ninjaquiz from './images/ninjaquiz.png'
+import piano from './images/piano.png'
+import expensetracker from './images/expensetracker.png'
+import digitalClock from './images/digitalclock.png'
+
 
 export const works = [
   {
     title: "Smokeys Pizza",
     description: "A Single Page Pizza Listing Landing Page",
-    link: "",
+    link: "https://karandattani.netlify.app/",
     small_text: "ReactJs + TailwindCSS",
-    Image_link:
-      "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    Image_link: smokeys,
   },
   {
     title: "Json Editor",
     description: "Online JSON Renderer",
     link: "https://jsoneditor.netlify.app",
     small_text: "ReactJs + TailwindCSS",
-    Image_link:
-      "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    Image_link:Json
   },
   {
     title: "Wall Printing",
     description: "A React Based Website",
-    link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
+    link: "https://www.wallprinting.com/",
     small_text: "ReactJs + VanillaCSS + Swiperjs",
-    Image_link:
-      "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    Image_link:wallprinting
   },
   {
     title: "Iryana Scarola",
     description: "A React Based Website",
-    link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
+    link: "https://www.iscarolaphotography.com/",
     small_text: "ReactJs + VanillaCSS ",
-    Image_link:
-      "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    Image_link:iryana
   },
   {
-    title: "Wall Printing",
+    title: "Operating System",
+    description: "React Based Website",
+    link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
+    small_text: "ReactJs + TailwindCSS",
+    Image_link:osproject
+  },
+  {
+    title: "Weather App",
     description: "A React Based Website",
     link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
     small_text: "ReactJs + VanillaCSS + Swiperjs",
-    Image_link:
-      "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    Image_link:weather
   },
   {
-    title: "Wall Printing",
+    title: "Todo-List",
+    description: "A Html CSS Based Website",
+    link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
+    small_text: "ReactJs + VanillaCSS + Swiperjs",
+    Image_link:todolist
+  },
+  {
+    title: "Interactive Quiz",
+    description: "Javascript Based Website",
+    link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
+    small_text: "ReactJs + VanillaCSS + Swiperjs",
+    Image_link:ninjaquiz
+  },
+  {
+  title: "Digital Clock",
+    description: "Javascript Based Website",
+    link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
+    small_text: "ReactJs + VanillaCSS + Swiperjs",
+    Image_link:digitalClock
+  },
+  {
+    title: "Piano",
+    description: "Javascript Website",
+    link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
+    small_text: "ReactJs + VanillaCSS + Swiperjs",
+    Image_link:piano
+  },
+  {
+    title: "Expense Tracker App",
     description: "A React Based Website",
     link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
     small_text: "ReactJs + VanillaCSS + Swiperjs",
-    Image_link:
-      "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    Image_link:expensetracker
   },
-  {
-    title: "Wall Printing",
-    description: "A React Based Website",
-    link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
-    small_text: "ReactJs + VanillaCSS + Swiperjs",
-    Image_link:
-      "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    title: "Wall Printing",
-    description: "A React Based Website",
-    link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
-    small_text: "ReactJs + VanillaCSS + Swiperjs",
-    Image_link:
-      "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    title: "Wall Printing",
-    description: "A React Based Website",
-    link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
-    small_text: "ReactJs + VanillaCSS + Swiperjs",
-    Image_link:
-      "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    title: "Wall Printing",
-    description: "A React Based Website",
-    link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
-    small_text: "ReactJs + VanillaCSS + Swiperjs",
-    Image_link:
-      "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    title: "Wall Printing",
-    description: "A React Based Website",
-    link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
-    small_text: "ReactJs + VanillaCSS + Swiperjs",
-    Image_link:
-      "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
+
+
 ];
 
 export let timeline_data = [
   {
     id: "1",
-    title : "Frontend Developer",
+    title : "Jr React Developer - Triguns",
     location : "Surat",
-    description : "Adipisicing repellat eius distinctio amet consequuntur incididunt gravida ipsam tincidunt anim mauris, praesentium occaecati!",
+    description : "Completed Offline two months internship at Triguns as an Jr. React Developer. Contributed in two real life working projects.",
     buttonText : "View ",
-    date : "August 2016 - present",
+    date : "June 2023 - July 2023",
     icon : "work",
   },
   {
     id: "2",
-    title : "Frontend Developer",
-    location : "Surat",
-    description : "Adipisicing repellat eius distinctio amet consequuntur incididunt gravida ipsam tincidunt anim mauris, praesentium occaecati!",
+    title : "Placement Portal of PDEU",
+    location : "PDEU",
+    description : "I was a part of the Placement Portal of PDEU Project where we have work in a team to contribute to our college.",
     buttonText : "View ",
-    date : "August 2016 - present",
+    date : "May 2023 - June 2023",
     icon : "school",
   },
   {
     id: "3",
-    title : "Frontend Developer",
-    location : "Surat",
-    description : "Adipisicing repellat eius distinctio amet consequuntur incididunt gravida ipsam tincidunt anim mauris, praesentium occaecati!",
-    buttonText : "View ",
-    date : "August 2016 - present",
+    title : "Graphics Designing Head",
+    location : "PDEU",
+    description : "Became the Graphics Designing Head in Encode Club.",
+    buttonText : "View",
+    date : "March 2023 - May 2023",
     icon : "work",
   },
   {
     id: "4",
-    title : "Frontend Developer",
-    location : "Surat",
-    description : "Adipisicing repellat eius distinctio amet consequuntur incididunt gravida ipsam tincidunt anim mauris, praesentium occaecati!",
+    title : "WordPress Developer",
+    location : "Remote",
+    description : "I have nailed the 2 months internship in Graphics Designing at OIA pvt limited",
     buttonText : "View ",
-    date : "August 2016 - present",
-    icon : "school",
-  },
-  {
-    id: "5",
-    title : "Frontend Developer",
-    location : "Surat",
-    description : "Adipisicing repellat eius distinctio amet consequuntur incididunt gravida ipsam tincidunt anim mauris, praesentium occaecati!",
-    buttonText : "View",
-    date : "August 2016 - present",
+    date : "Jan 2023 - March 2023",
     icon : "work",
   },
   {
-    id: "6",
-    title : "Frontend Developer",
-    location : "Surat",
-    description : "Adipisicing repellat eius distinctio amet consequuntur incididunt gravida ipsam tincidunt anim mauris, praesentium occaecati!",
+    id: "5",
+    title : "Graphics Designing",
+    location : "PDEU",
+    description : "Joined Encode:The Computer Science Club of PDEU as an Core-Comittee member",
     buttonText : "View",
-    date : "August 2016 - present",
+    date : "September 2022 - March 2023",
     icon : "school",
   },
 

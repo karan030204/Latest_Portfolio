@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.c8e8c3b3.css",
-    "main.js": "/static/js/main.e067140b.js",
+    "main.css": "/static/css/main.18abe105.css",
+    "main.js": "/static/js/main.032c6fe4.js",
     "static/media/basketball.mp4": "/static/media/basketball.bc1277f0be2ffbf374bd.mp4",
+    "static/media/digitalclock.png": "/static/media/digitalclock.90f31c3b17f0a4c0d424.png",
+    "static/media/iryana.png": "/static/media/iryana.fa9b72069256b4c73674.png",
+    "static/media/wallprinting.png": "/static/media/wallprinting.a3bd0c3d21d51986eecd.png",
+    "static/media/pizza.png": "/static/media/pizza.a22c24f4bae1d97cc70b.png",
     "static/media/nyeusi.png": "/static/media/nyeusi.8172b58383c809e7eb7e.png",
     "static/media/movie-metro.png": "/static/media/movie-metro.d4c2cf0ff57c74ade54e.png",
+    "static/media/osproject.png": "/static/media/osproject.2faa4c3c4d6121911d76.png",
     "static/media/nairobi.png": "/static/media/nairobi.ac0394ec045edde92ab9.png",
     "static/media/komikult.png": "/static/media/komikult.6a1054420de7c5e7c602.png",
     "static/media/leaderboard.png": "/static/media/leaderboard.9826c7ca4c9f9a912e56.png",
     "static/media/resume.png": "/static/media/resume.1749686a56a038ac4447.png",
     "static/media/shaq.png": "/static/media/shaq.fede38a559c6d4f310d0.png",
-    "static/media/Smokeys.png": "/static/media/Smokeys.6bc4a68bf94df3a1347d.png",
     "static/media/space-hub.png": "/static/media/space-hub.f07fdc44c81a1ff8dacf.png",
     "static/media/thumbnail.png": "/static/media/thumbnail.0001fe8699e77690cb0e.png",
     "static/media/math-magicians.png": "/static/media/math-magicians.e86207103c191e26733a.png",
@@ -19,6 +23,7 @@
     "static/media/bw-map.jpeg": "/static/media/bw-map.9a72544ee56c3c1cf1ec.jpeg",
     "static/media/PlayfairDisplay-ExtraBold_0.ttf": "/static/media/PlayfairDisplay-ExtraBold_0.18a9cdf91bf509de5642.ttf",
     "static/media/white-abstract.png": "/static/media/white-abstract.81dfceb32cc78242923f.png",
+    "static/media/ninjaquiz.png": "/static/media/ninjaquiz.8561dde64fd1416fc3c2.png",
     "static/media/Gilroy-UltraLightItalic.ttf": "/static/media/Gilroy-UltraLightItalic.87f0acd42b27a5408e0b.ttf",
     "static/media/Gilroy-ThinItalic.ttf": "/static/media/Gilroy-ThinItalic.930dc405dc78cc97a766.ttf",
     "static/media/MarkPro-Bold.otf": "/static/media/MarkPro-Bold.62069f88a00179469e9c.otf",
@@ -42,6 +47,7 @@
     "static/media/Gilroy-Regular.ttf": "/static/media/Gilroy-Regular.5b89a8df3b17dccdb73f.ttf",
     "static/media/cretype  Caros Heavy Italic.otf": "/static/media/cretype  Caros Heavy Italic.3d836babd094a7c28881.otf",
     "static/media/Gilroy-Medium.ttf": "/static/media/Gilroy-Medium.1b4da6582f83f45ea039.ttf",
+    "static/media/expensetracker.png": "/static/media/expensetracker.781bdf242ff95baeece3.png",
     "static/media/cretype  Caros Thin Italic.otf": "/static/media/cretype  Caros Thin Italic.cd45c26ad4d06cec6e74.otf",
     "static/media/cretype  Caros Medium.otf": "/static/media/cretype  Caros Medium.5aa7b946346b6af114a7.otf",
     "static/media/cretype  Caros Light.otf": "/static/media/cretype  Caros Light.9e604d201999faf711ec.otf",
@@ -57,10 +63,14 @@
     "static/media/logo-black.png": "/static/media/logo-black.4eb654a89fd8c5526d67.png",
     "static/media/Anabele.ttf": "/static/media/Anabele.e7f27b2c32e1cc47108c.ttf",
     "static/media/saol-italic.ttf": "/static/media/saol-italic.07d553de66ab0cef5934.ttf",
+    "static/media/Json.png": "/static/media/Json.5447dbc560d315febda5.png",
+    "static/media/piano.png": "/static/media/piano.d5389f6c9a90239b6a35.png",
     "static/media/NY.otf": "/static/media/NY.e934fc10a53877d377d0.otf",
+    "static/media/todolist.png": "/static/media/todolist.143fd72cd8463c8998bb.png",
     "static/media/saol.ttf": "/static/media/saol.f43ee59ca23c16a7411f.ttf",
     "static/media/circularstd-light.otf": "/static/media/circularstd-light.4a1a0bfcc3a53847a945.otf",
     "static/media/Glamor-LightCondensed.ttf": "/static/media/Glamor-LightCondensed.cb7c4773c6044bb12c40.ttf",
+    "static/media/weatherapp.png": "/static/media/weatherapp.5d3eb1b3519019317f1f.png",
     "static/media/dcc.png": "/static/media/dcc.5fdca3b652b245f63fc1.png",
     "static/media/Blisstwin.ttf": "/static/media/Blisstwin.a568ca010f5b7b50b145.ttf",
     "static/media/NeueHaasGrotTextRound-65Medium-Web.woff.ttf": "/static/media/NeueHaasGrotTextRound-65Medium-Web.woff.b62fbb828b0e2f10a94e.ttf",
@@ -96,11 +106,11 @@
     "static/media/school.svg": "/static/media/school.a41655f6d5350015803153c7410cef6a.svg",
     "static/media/work.svg": "/static/media/work.3710b62484ed638074240e99317c6c60.svg",
     "index.html": "/index.html",
-    "main.c8e8c3b3.css.map": "/static/css/main.c8e8c3b3.css.map",
-    "main.e067140b.js.map": "/static/js/main.e067140b.js.map"
+    "main.18abe105.css.map": "/static/css/main.18abe105.css.map",
+    "main.032c6fe4.js.map": "/static/js/main.032c6fe4.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8e8c3b3.css",
-    "static/js/main.e067140b.js"
+    "static/css/main.18abe105.css",
+    "static/js/main.032c6fe4.js"
   ]
 }
