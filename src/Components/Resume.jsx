@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../images/resume.png";
+import resume from "../images/resume1.png";
 import "../Elements/Resume.css";
 import Mouse from "../MouseMove";
 import MovingText from "../HorizontalScrollText";
