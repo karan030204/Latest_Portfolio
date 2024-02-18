@@ -96,6 +96,10 @@ const technologies = [
     name: 'git',
     icon: git,
   },
+   {
+    name: 'git',
+    icon: git,
+  }, 
 
 
 

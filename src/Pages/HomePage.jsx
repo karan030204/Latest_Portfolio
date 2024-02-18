@@ -10,12 +10,12 @@ import Works from '../Components/Works'
 import Contact from '../Components/Contact'
 import Resume from '../Components/Resume'
 import PreLoader from '../Components/PreLoader'
-import ReactGA from "react-ga"
+import ReactGA from "react-ga4"
 
 
 const HomePage = () => {
 useEffect(() => {
-  ReactGA.pageview(window.location.pathname);
+  // ReactGA.pageview(window.location.pathname);
 
  
 }, [])
@@ -25,7 +25,7 @@ useEffect(() => {
     <div>
       <PreLoader/>
         <Navbar1/>
-        {/* <Hero/> */}
+        <Hero/>
         <About/>
         <More_About_me/>
         <Works/>
