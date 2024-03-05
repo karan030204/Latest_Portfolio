@@ -25,7 +25,7 @@ useEffect(() => {
     <div>
       <PreLoader/>
         <Navbar1/>
-        <Hero/>
+        {/* <Hero/> */}
         <About/>
         <More_About_me/>
         <Works/>
