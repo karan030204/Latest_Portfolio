@@ -37,7 +37,7 @@ const Experience = () => {
         <div className="exp-subtitle">
           <h6
             className="subtitle"
-            data-aos="fade-left"
+            data-aos="fade-down"
             data-aos-duration="2000"
             data-aos-easing="ease-in-out"
             // data-aos-mirror="true"

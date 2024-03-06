@@ -21,7 +21,7 @@ const More_About_me = () => {
         </div>
         <div
           className="video-center-small-text"
-          data-aos="fade-left"
+          data-aos="fade-down"
 
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"

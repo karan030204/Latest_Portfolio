@@ -26,7 +26,7 @@ const Works = () => {
           <div className="works-left">
             <div
               className="works-left-title"
-              data-aos="fade-left"
+              data-aos="fade-down"
               data-aos-offset="100"
               data-aos-delay="10"
               data-aos-duration="2000"

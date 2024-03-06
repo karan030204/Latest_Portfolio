@@ -29,10 +29,10 @@ useEffect(() => {
         <About/>
         <More_About_me/>
         <Works/>
-        {/* <Tech/> */}
+        <Tech/>
         <Experience/>
         <Resume/>
-        {/* <Contact />  */}
+        <Contact /> 
         {/* <Tech /> */}
         {/* <Projects/> */}
     </div>

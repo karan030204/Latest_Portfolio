@@ -39,14 +39,14 @@ export const works = [
     description: "Online JSON Renderer",
     link: "https://jsoneditor.netlify.app",
     small_text: "ReactJs + TailwindCSS",
-    Image_link:Json
+    Image_link: Json
   },
   {
     title: "Wall Printing",
     description: "A React Based Website",
     link: "https://www.wallprinting.com/",
     small_text: "ReactJs + VanillaCSS + Swiperjs",
-    Image_link:wallprinting
+    Image_link: wallprinting
   },
   {
     title: "Iryana Scarola",

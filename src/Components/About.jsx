@@ -23,7 +23,7 @@ const About = () => {
             <div className="left-content">
               <div
                 className="ImgWrap1 hover-effect"
-                data-aos="fade-right"
+                data-aos="fade-up"
             
                 data-aos-duration="2000"
                 data-aos-easing="ease-in-out"
@@ -38,7 +38,7 @@ const About = () => {
 
               <div
                 className="ImgWrap2 hover-effect"
-                data-aos="fade-left"
+                data-aos="fade-up"
           
                 data-aos-duration="2000"
                 data-aos-easing="ease-in-out"

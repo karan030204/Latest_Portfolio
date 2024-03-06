@@ -176,7 +176,7 @@ const Contact = () => {
             <div
               variants={textVariant()}
               className="contact-subtitle"
-              data-aos="fade-left"
+              data-aos="fade-down"
               // data-aos-offset="100"
               // data-aos-delay="1000"
               data-aos-duration="2000"
@@ -210,7 +210,7 @@ const Contact = () => {
               </div>
               <div
                 className="discuss-btn"
-              data-aos="fade-left"
+              data-aos="fade-down"
 
                 // data-aos-offset="10"
                 // data-aos-delay="100"

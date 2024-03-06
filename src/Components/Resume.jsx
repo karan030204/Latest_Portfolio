@@ -11,7 +11,7 @@ const Resume = () => {
         <div className="resume-content">
           <div className="resume-title">
             <span
-              data-aos="fade-left"
+              data-aos="fade-down"
 
               data-aos-duration="2000"
               data-aos-easing="ease-in-out"
@@ -25,7 +25,7 @@ const Resume = () => {
             <Mouse>
               <a href="/resume.pdf" target="_blank">
                 <button
-                  data-aos="fade-left"
+                  data-aos="fade-down"
                 
                   data-aos-duration="2000"
                   data-aos-easing="ease-in-out"
