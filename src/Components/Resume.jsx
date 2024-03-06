@@ -12,11 +12,8 @@ const Resume = () => {
           <div className="resume-title">
             <span
               data-aos="fade-down"
-
               data-aos-duration="2000"
               data-aos-easing="ease-in-out"
-              // data-aos-mirror="true"
-
             >
               Resume
             </span>

@@ -163,7 +163,7 @@ const Contact = () => {
           <div className="contact-content">
             <div
               className="contact-title"
-              data-aos="fade-right"
+              data-aos="fade-down"
               // data-aos-offset="100"
               // data-aos-delay="1000"
               data-aos-duration="2000"
@@ -188,7 +188,7 @@ const Contact = () => {
             </div>
             <div
               className="contact-desc"
-              data-aos="fade-right"
+              data-aos="fade-down"
               // data-aos-offset="100"
               // data-aos-delay="100"
               data-aos-duration="2000"
@@ -200,7 +200,7 @@ const Contact = () => {
             <div className="buttons">
               <div
                 className="message-btn"
-              data-aos="fade-right"
+              data-aos="fade-down"
                 // data-aos-offset="100"
                 // data-aos-delay="100"
                 data-aos-duration="2000"
@@ -222,6 +222,7 @@ const Contact = () => {
             </div>
             <div
               className="contact-social-media"
+              data-aos="fade-down"
               // data-aos-delay="100"
               data-aos-duration="2000"
               data-aos-easing="ease-in-out"

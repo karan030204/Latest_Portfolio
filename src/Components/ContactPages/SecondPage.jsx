@@ -34,7 +34,10 @@ const SecondPage = ({ myData, setMyData }) => {
     <>
       <div className="secondPage">
         <div className="title">
-          <span className="project_title">
+          <span className="project_title" data-aos="fade-right"
+
+data-aos-duration="2000"
+data-aos-easing="ease-in-out">
             What kind of project would you like me to craft for you?
           </span>
         </div>

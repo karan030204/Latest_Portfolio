@@ -37,7 +37,10 @@ const ThirdPage = ({ myData, setMyData, isDataFilled, setIsDataFilled, isNextCli
     <>
       <div className="thirdPage">
         <div className="get_in_touch">
-          <span className="get_in_touch_title">
+          <span className="get_in_touch_title" data-aos="fade-right"
+
+data-aos-duration="2000"
+data-aos-easing="ease-in-out">
             Awesome, How should I get in touch with you?
           </span>
         </div>

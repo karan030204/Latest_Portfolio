@@ -3,7 +3,10 @@ import React from 'react'
 const Intro = () => {
   return (
     <>
-       <div className='IntroPage'>
+       <div className='IntroPage' data-aos="fade-right"
+
+data-aos-duration="2000"
+data-aos-easing="ease-in-out">
             <div className='emoji'>
                 <div className='high-five'>🙌</div>
             </div>

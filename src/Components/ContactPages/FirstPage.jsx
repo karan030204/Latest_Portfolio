@@ -66,7 +66,13 @@ const FirstPage = ({
     <>
       <div className="name-details">
         <div className="name">
-          <span>May I please have your name ? </span>
+          <span
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+          >
+            May I please have your name ?{" "}
+          </span>
         </div>
         <div className="input-field">
           <input

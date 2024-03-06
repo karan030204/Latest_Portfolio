@@ -21,12 +21,18 @@ const Thanks = ({isSubmitted}) => {
     
   return (
     <>
-        <div className='thanks-wrapper'>
+        <div className='thanks-wrapper' data-aos="fade-right"
+
+data-aos-duration="2000"
+data-aos-easing="ease-in-out">
             <div className="loader" style={{display:isLoaderActive ? "block" : "none"}}>
                 <img src={thanks_loader} alt="" />
 
             </div>
-            <div className="thanks-msg" style={{display: isLoaderActive ? "none":"block"}}>
+            <div data-aos="fade-right"
+
+data-aos-duration="2000"
+data-aos-easing="ease-in-out" className="thanks-msg" style={{display: isLoaderActive ? "none":"block"}}>
                 <span>🎉 Thanks for reaching out! We'll be in touch soon. 📞</span>
             </div>
             

@@ -12,7 +12,7 @@ const More_About_me = () => {
       <div className="video" id="more-about-me">
         <div
           className="video-center-big-text"
-          data-aos="fade-right"
+          data-aos="fade-down"
 
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
@@ -22,7 +22,6 @@ const More_About_me = () => {
         <div
           className="video-center-small-text"
           data-aos="fade-down"
-
           data-aos-duration="2000"
           data-aos-easing="ease-in-out"
         >

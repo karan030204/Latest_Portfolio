@@ -57,7 +57,11 @@ const handleContentChange = (e) => {
     <>
       <div className="fourthPage">
         <div className="anything_else">
-          <span className="anything_else_title">
+          <span className="anything_else_title"
+          data-aos="fade-right"
+
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out">
             Lastly, Anything else you would like to mention?
           </span>
         </div>  

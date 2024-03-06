@@ -26,10 +26,12 @@ const Navbar1 = () => {
   };
   return (
     <>
-      <nav >
+      <nav>
         <div className="top-navbar">
           <div className="inner-top-navbar">
-            <div className="navbar-Logo">KD</div>
+            <a href="/" style={{textDecoration:"none"}}>
+              <div className="navbar-Logo">KD</div>
+            </a>
             <div
               className={
                 isToggleClicked ? "navbar-hamburger active" : "navbar-hamburger"
