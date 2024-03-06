@@ -27,9 +27,7 @@ const Tech = () => {
         > */}{" "}
           <div
             className="skills1"
-            data-aos="fade-left"
-            data-aos-duration="2000"
-            data-aos-easing="ease-in-out"
+       
             // data-aos-mirror="true"
           >
             {technologies.slice(0, 4).map((technology) => (
@@ -43,9 +41,7 @@ const Tech = () => {
           </div>
           <div
             className="skills2"
-            data-aos="fade-right"
-            data-aos-duration="2000"
-            data-aos-easing="ease-in-out"
+        
             // data-aos-mirror="true"
           >
             {technologies.slice(4, 9).map((technology) => (
