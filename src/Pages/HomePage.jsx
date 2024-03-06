@@ -32,7 +32,7 @@ useEffect(() => {
         <Tech/>
         <Experience/>
         <Resume/>
-        <Contact /> 
+        {/* <Contact />  */}
         {/* <Tech /> */}
         {/* <Projects/> */}
     </div>
