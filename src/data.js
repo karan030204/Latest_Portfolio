@@ -10,6 +10,7 @@ import piano from './images/piano.png'
 import expensetracker from './images/expensetracker.png'
 import digitalClock from './images/digitalclock.png'
 import waptab from "./images/waptab.png"
+import onlinesharktank from "./images/onlinesharktank.png"
 
 
 export const works = [
@@ -25,7 +26,7 @@ export const works = [
     description: "One Stop solution for Business and Investors",
     link: "https://github.com/karan030204/Online_Shark_Tank",
     small_text: "ReactJs + TailwindCSS",
-    Image_link: smokeys,
+    Image_link: onlinesharktank,
   },
   {
     title: "Smokeys Pizza",
@@ -111,6 +112,15 @@ export const works = [
 export let timeline_data = [
   {
     id: "1",
+    title : "WAPTAB - Water Purification Treatment Association of Bharat",
+    location : "Gandhinagar",
+    description : "FreeLance Project built using MERN Stack",
+    buttonText : "View",
+    date : "Feb 2024 - March 2024",
+    icon : "work",
+  },
+  {
+    id: "2",
     title : "Jr React Developer - Triguns",
     location : "Surat",
     description : "Completed Offline two months internship at Triguns as an Jr. React Developer. Contributed in two real life working projects.",
@@ -119,7 +129,7 @@ export let timeline_data = [
     icon : "work",
   },
   {
-    id: "2",
+    id: "3",
     title : "Placement Portal of PDEU",
     location : "PDEU",
     description : "I was a part of the Placement Portal of PDEU Project where we have work in a team to contribute to our college.",
@@ -128,7 +138,16 @@ export let timeline_data = [
     icon : "school",
   },
   {
-    id: "3",
+    id: "4",
+    title : "Treasurer - Encode Club @ PDEU",
+    location : "PDEU",
+    description : "Became the Treasurer of the Club where i manage all the finances of the Event and monitoring all the details of the Event.",
+    buttonText : "View ",
+    date : "May 2023 - May 2024",
+    icon : "school",
+  },
+  {
+    id: "5",
     title : "Graphics Designing Head",
     location : "PDEU",
     description : "Became the Graphics Designing Head in Encode Club.",
@@ -137,7 +156,7 @@ export let timeline_data = [
     icon : "work",
   },
   {
-    id: "4",
+    id: "6",
     title : "WordPress Developer",
     location : "Remote",
     description : "I have nailed the 2 months internship in Graphics Designing at OIA pvt limited",
@@ -146,7 +165,7 @@ export let timeline_data = [
     icon : "work",
   },
   {
-    id: "5",
+    id: "7",
     title : "Graphics Designing",
     location : "PDEU",
     description : "Joined Encode:The Computer Science Club of PDEU as an Core-Comittee member",
