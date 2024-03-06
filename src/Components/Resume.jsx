@@ -10,18 +10,44 @@ const Resume = () => {
       <div className="resume-wrapper" id="resume">
         <div className="resume-content">
           <div className="resume-title">
-            <span>Resume</span>
+            <span
+              data-aos="fade-left"
+
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out"
+              // data-aos-mirror="true"
+
+            >
+              Resume
+            </span>
           </div>
           <div className="resume-btn">
             <Mouse>
               <a href="/resume.pdf" target="_blank">
-                <button>Download Resume</button>
+                <button
+                  data-aos="fade-left"
+                
+                  data-aos-duration="2000"
+                  data-aos-easing="ease-in-out"
+                  // data-aos-mirror="true"
+
+                >
+                  Download Resume
+                </button>
               </a>
             </Mouse>
           </div>
           <div className="resume">
             <a href="/resume.pdf" target="_blank">
-              <div className="ImgWrapper">
+              <div
+                className="ImgWrapper"
+                data-aos="fade-up"
+        
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+                // data-aos-mirror="true"
+                data-aos-once="false"
+              >
                 <img src={resume} alt="" />
               </div>
             </a>

@@ -26,7 +26,7 @@ const Navbar1 = () => {
   };
   return (
     <>
-      <nav>
+      <nav >
         <div className="top-navbar">
           <div className="inner-top-navbar">
             <div className="navbar-Logo">KD</div>

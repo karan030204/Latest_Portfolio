@@ -14,11 +14,17 @@ import Works from "./Components/Works";
 import PreLoader from "./Components/PreLoader";
 import { useState,useEffect } from "react";
 import ReactGA from "react-ga4"
+import AOS from "aos";
+
 
 const TRACKING_ID = "G-8NH0LNRZMB"
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   
 

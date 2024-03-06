@@ -9,7 +9,9 @@ import { fadeIn } from "../utils/motion";
 import "aos/dist/aos.css";
 import AOS from "aos";
 
+
 const Works = () => {
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -22,7 +24,18 @@ const Works = () => {
       <div className="works aos-init" id="work">
         <div className="works-content">
           <div className="works-left">
-            <div className="works-left-title">Work.</div>
+            <div
+              className="works-left-title"
+              data-aos="fade-left"
+              data-aos-offset="100"
+              data-aos-delay="10"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out"
+              // data-aos-mirror="true"
+              data-aos-once="false"
+            >
+              Work.
+            </div>
             {/* <motion.div
       ref={ref}
       variants={fadeIn("left", "text", 1, 2)}
@@ -33,24 +46,30 @@ const Works = () => {
             {/* </motion.div> */}
             <div className="works-left-description">
               <p
-                data-aos="fade-up"
+                data-aos="fade-right"
                 data-aos-offset="100"
                 data-aos-delay="10"
                 data-aos-duration="2000"
                 data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
+                // data-aos-mirror="true"
                 data-aos-once="false"
                 // data-aos-anchor-placement="top-center"
               >
-                Officia error nonummy vulputate cupidatat illum diamlorem iure
-                earum id curae! Excepturi iaculis, recusandae! Anim, consectetur
-                et a odit placerat, vero, dolor ullamcorper dolorum sagittis
-                fuga iste habitasse, esse sapiente, commodi torquent porta, id.
-                .
+                I am a seasoned developer with a proven track record of building
+                diverse projects spanning various domains. Leveraging my
+                expertise in HTML, CSS, JavaScript, React.js, Tailwind CSS,
+                Material UI, MongoDB, Express, and Node.js, I have crafted a
+                portfolio of innovative applications. Some notable projects
+                include Waptab, Todo, and Weather. Each project showcases my
+                commitment to crafting efficient solutions and my proficiency in
+                utilizing cutting-edge technologies to deliver exceptional user
+                experiences.
               </p>
             </div>
             <div className="works-more-btn">
-              <button>Read More</button>
+              <a href="#contact">
+              <button >Read More</button>
+              </a>
             </div>
           </div>
           <div className="works-right">
@@ -58,13 +77,30 @@ const Works = () => {
               {/* <TextHover> */}
               {works.map((item) => {
                 return (
-                  <a>
-                    <div className="work-item">
-                      <div className="work-image">
+                  <a href={item.link} target="_blank">
+                    <div className="work-item" >
+                      <div
+                        className="work-image"
+                        data-aos="fade-up"
+
+                        data-aos-duration="2000"
+                        data-aos-easing="ease-in-out"
+                        // data-aos-mirror="true"
+                        data-aos-once="false"
+                      >
                         <img src={item.Image_link} alt="" />
                       </div>
-                      <div className="work-inner-detail">
-                        <span className="work-title">
+                      <div className="work-inner-detail" >
+                        <span
+                          className="work-title"
+                          // data-aos="fade-right"
+                          // data-aos-offset="100"
+                          // // data-aos-delay="1"
+                          // data-aos-duration="2000"
+                          // data-aos-easing="ease-in-out"
+                          // data-aos-mirror="true"
+                          
+                        >
                           <TextHover
                             text={item.title}
                             imageSrc={item.Image_link}

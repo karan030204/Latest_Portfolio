@@ -56,21 +56,20 @@ const Contact = () => {
   }, [page]);
 
   useEffect(() => {
-    if(discuss_btn_count == 1){
-    const introPage = setTimeout(() => {
-      setIsIntro(true);
-      const intro = setTimeout(() => {
-        setIsIntro(false);
-      }, 3900);
-    }, 1000);
-  }
+    if (discuss_btn_count == 1) {
+      const introPage = setTimeout(() => {
+        setIsIntro(true);
+        const intro = setTimeout(() => {
+          setIsIntro(false);
+        }, 3900);
+      }, 1000);
+    }
 
-  if(!isIntro && discuss_btn_count == 1){
-    const pageIncrement = setTimeout(() => {
-      setPage(1);
-    }, 5800);}
-
-
+    if (!isIntro && discuss_btn_count == 1) {
+      const pageIncrement = setTimeout(() => {
+        setPage(1);
+      }, 5800);
+    }
   }, [isDiscussClicked]);
 
   const handleNextPage = () => {
@@ -78,7 +77,7 @@ const Contact = () => {
       setIsNextClicked(true);
     }
     if (page === 4) {
-      setIsNextClicked(true)
+      setIsNextClicked(true);
       if (isDataFilled) {
         emailjs
           .send(
@@ -162,49 +161,94 @@ const Contact = () => {
             </MovingText>
           </div>
           <div className="contact-content">
-            <div className="contact-title">Hello.</div>
-            <div variants={textVariant()} className="contact-subtitle">
+            <div
+              className="contact-title"
+              data-aos="fade-right"
+              // data-aos-offset="100"
+              // data-aos-delay="1000"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out"
+              // data-aos-mirror="true"
+              // data-aos-once="false"
+            >
+              Hello.
+            </div>
+            <div
+              variants={textVariant()}
+              className="contact-subtitle"
+              data-aos="fade-left"
+              // data-aos-offset="100"
+              // data-aos-delay="1000"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out"
+              // data-aos-mirror="true"
+            >
               {/* <TextHover text="Lets discuss about a next big thing" className="big-text" image_link="https://images.pexels.com/photos/16894687/pexels-photo-16894687/free-photo-of-open-neon-sign.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" > */}
               Lets discuss about a next big thing
             </div>
-            <div className="contact-desc">
+            <div
+              className="contact-desc"
+              data-aos="fade-right"
+              // data-aos-offset="100"
+              // data-aos-delay="100"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out"
+            >
               I can help design and build you next website. Let me know what you
               need by filling in this quick{" "}
             </div>
             <div className="buttons">
-              <div className="message-btn">
+              <div
+                className="message-btn"
+              data-aos="fade-right"
+                // data-aos-offset="100"
+                // data-aos-delay="100"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+              >
                 <button onClick={handleDiscuss}>Write a Message</button>
               </div>
-              <div className="discuss-btn">
+              <div
+                className="discuss-btn"
+              data-aos="fade-left"
+
+                // data-aos-offset="10"
+                // data-aos-delay="100"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+              >
                 <button onClick={handleDiscuss}>Discuss a Project</button>
               </div>
             </div>
-            <div className="contact-social-media">
+            <div
+              className="contact-social-media"
+              // data-aos-delay="100"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out"
+            >
               <a href="https://www.instagram.com/_karan324_/">
-              <div className="contact-instagram">
-                <span>Instagram</span>
-                <FaInstagram />
-              </div>
+                <div className="contact-instagram">
+                  <span>Instagram</span>
+                  <FaInstagram />
+                </div>
               </a>
               <a href="https://github.com/karan030204">
-                
-              <div className="contact-github">
-                <span>Github</span>
-                <FaGithub />
-              </div>
+                <div className="contact-github">
+                  <span>Github</span>
+                  <FaGithub />
+                </div>
               </a>
               <a href="https://www.linkedin.com/in/karan-developer/">
-              <div className="contact-linkedin">
-                <span>LinkedIn</span>
-                <FaLinkedin />
-              </div>
+                <div className="contact-linkedin">
+                  <span>LinkedIn</span>
+                  <FaLinkedin />
+                </div>
               </a>
               <a href="https://twitter.com/DattaniKaran25">
-              <div className="contact-twitter">
-
-                <span>Twitter</span>
-                <FaTwitter />
-              </div>
+                <div className="contact-twitter">
+                  <span>Twitter</span>
+                  <FaTwitter />
+                </div>
               </a>
             </div>
           </div>

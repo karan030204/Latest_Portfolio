@@ -6,8 +6,8 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import 'react-vertical-timeline-component/style.min.css';
-import '../Elements/Experience.css'
+import "react-vertical-timeline-component/style.min.css";
+import "../Elements/Experience.css";
 
 const Experience = () => {
   //this is style for work icon
@@ -24,31 +24,59 @@ const Experience = () => {
     <>
       <div className="exp-wrapper" id="exp">
         <div className="exp-title">
-        <h1 className="title">Work Experience</h1>
+          <h1
+            className="title"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+            // data-aos-mirror="true"
+          >
+            Work Experience
+          </h1>
         </div>
         <div className="exp-subtitle">
-        <h6 className="subtitle">What I'hve done so far</h6></div>
+          <h6
+            className="subtitle"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+            // data-aos-mirror="true"
+
+          >
+            What I'hve done so far
+          </h6>
+        </div>
         <VerticalTimeline>
           {timeline_data.map((elem) => {
             let isWorkIcon = elem.icon === "work";
-            let showButton = elem.buttonText !=  undefined && elem.buttonText != null && elem.buttonText != "";
+            let showButton =
+              elem.buttonText != undefined &&
+              elem.buttonText != null &&
+              elem.buttonText != "";
             return (
               <VerticalTimelineElement
-              className="sub_element"
-              // className="vertical-timeline-element--work"
+                className="sub_element"
+                // className="vertical-timeline-element--work"
                 key={elem.id} // key props for uniquely identify the card
                 date={elem.date} // date props because we want to show date on the other side of the card
                 dateClassName="date" // because we want to style the date
                 icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
                 iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
               >
-              <h3 className="vertical-timeline-element-title" style={{fontFamily:"Gilroy-semibold"}}>{elem.title}</h3>
-              <h5 className="vertical-timeline-element-subtitle" style={{fontFamily:"Gilroy-regular "}}>{elem.location}</h5>
-              <p id="description">{elem.description}</p>
-              {showButton && (
-                <a href="/" className={`button ${isWorkIcon ? "workButton" : "schoolButton"}`}>{elem.buttonText}</a>
-              )}
-
+                <h3
+                  className="vertical-timeline-element-title"
+                  style={{ fontFamily: "Gilroy-semibold" }}
+                >
+                  {elem.title}
+                </h3>
+                <h5
+                  className="vertical-timeline-element-subtitle"
+                  style={{ fontFamily: "Gilroy-regular " }}
+                >
+                  {elem.location}
+                </h5>
+                <p id="description">{elem.description}</p>
+                
               </VerticalTimelineElement>
             );
           })}

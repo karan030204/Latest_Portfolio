@@ -9,9 +9,24 @@ import ninjaquiz from './images/ninjaquiz.png'
 import piano from './images/piano.png'
 import expensetracker from './images/expensetracker.png'
 import digitalClock from './images/digitalclock.png'
+import waptab from "./images/waptab.png"
 
 
 export const works = [
+  {
+    title: "WAPTAB - Water Purification Treatment Association of Bharat",
+    description: "A Single Page Pizza Listing Landing Page",
+    link: "https://github.com/karan030204/Infolanze_frontend",
+    small_text: "ReactJs + TailwindCSS",
+    Image_link: waptab,
+  },
+  {
+    title: "Online Shark Tank",
+    description: "One Stop solution for Business and Investors",
+    link: "https://github.com/karan030204/Online_Shark_Tank",
+    small_text: "ReactJs + TailwindCSS",
+    Image_link: smokeys,
+  },
   {
     title: "Smokeys Pizza",
     description: "A Single Page Pizza Listing Landing Page",
@@ -43,49 +58,49 @@ export const works = [
   {
     title: "Operating System",
     description: "React Based Website",
-    link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
+    link: "https://github.com/karan030204/OS-web",
     small_text: "ReactJs + TailwindCSS",
     Image_link:osproject
   },
   {
     title: "Weather App",
     description: "A React Based Website",
-    link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
+    link: "https://weather-app-blond-nine-48.vercel.app/",
     small_text: "ReactJs + VanillaCSS + Swiperjs",
     Image_link:weather
   },
   {
     title: "Todo-List",
     description: "A Html CSS Based Website",
-    link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
+    link: "https://todo-list-javascript-psi.vercel.app/",
     small_text: "ReactJs + VanillaCSS + Swiperjs",
     Image_link:todolist
   },
   {
     title: "Interactive Quiz",
     description: "Javascript Based Website",
-    link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
+    link: "https://todo-list-javascript-hkz5.vercel.app/",
     small_text: "ReactJs + VanillaCSS + Swiperjs",
     Image_link:ninjaquiz
   },
   {
   title: "Digital Clock",
     description: "Javascript Based Website",
-    link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
+    link: "https://digital-clock-pied.vercel.app/",
     small_text: "ReactJs + VanillaCSS + Swiperjs",
     Image_link:digitalClock
   },
   {
     title: "Piano",
     description: "Javascript Website",
-    link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
+    link: "https://pianojavascript.vercel.app/",
     small_text: "ReactJs + VanillaCSS + Swiperjs",
     Image_link:piano
   },
   {
     title: "Expense Tracker App",
     description: "A React Based Website",
-    link: "http://www.trigunsdev.com/team1/reactproject/wallprinting/",
+    link: "https://expense-tracker-react-xi.vercel.app/",
     small_text: "ReactJs + VanillaCSS + Swiperjs",
     Image_link:expensetracker
   },
