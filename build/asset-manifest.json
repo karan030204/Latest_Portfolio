@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ebb0535e.css",
-    "main.js": "/static/js/main.2a066509.js",
+    "main.js": "/static/js/main.fdfc89c6.js",
     "static/media/basketball.mp4": "/static/media/basketball.bc1277f0be2ffbf374bd.mp4",
     "static/media/waptab.png": "/static/media/waptab.ef2c0c06bb1d634ec1a0.png",
     "static/media/digitalclock.png": "/static/media/digitalclock.90f31c3b17f0a4c0d424.png",
@@ -18,8 +18,8 @@
     "static/media/onlinesharktank.png": "/static/media/onlinesharktank.ed11c2f48b576770820f.png",
     "static/media/space-hub.png": "/static/media/space-hub.f07fdc44c81a1ff8dacf.png",
     "static/media/thumbnail.png": "/static/media/thumbnail.0001fe8699e77690cb0e.png",
+    "static/media/resume1.png": "/static/media/resume1.cfb35f9f596a8e8dd833.png",
     "static/media/math-magicians.png": "/static/media/math-magicians.e86207103c191e26733a.png",
-    "static/media/resume1.png": "/static/media/resume1.085e47380dd849677544.png",
     "static/media/Lihataja.ttf": "/static/media/Lihataja.9b661f42d5908e9c2f62.ttf",
     "static/media/Bastliga One.ttf": "/static/media/Bastliga One.b99d91a5fef2b0c861ef.ttf",
     "static/media/bw-map.jpeg": "/static/media/bw-map.9a72544ee56c3c1cf1ec.jpeg",
@@ -109,10 +109,10 @@
     "static/media/work.svg": "/static/media/work.3710b62484ed638074240e99317c6c60.svg",
     "index.html": "/index.html",
     "main.ebb0535e.css.map": "/static/css/main.ebb0535e.css.map",
-    "main.2a066509.js.map": "/static/js/main.2a066509.js.map"
+    "main.fdfc89c6.js.map": "/static/js/main.fdfc89c6.js.map"
   },
   "entrypoints": [
     "static/css/main.ebb0535e.css",
-    "static/js/main.2a066509.js"
+    "static/js/main.fdfc89c6.js"
   ]
 }
